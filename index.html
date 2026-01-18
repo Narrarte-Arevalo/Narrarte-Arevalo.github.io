@@ -977,11 +977,23 @@
 
                 <div id="main-map" class="map-container" role="region" aria-label="Mapa general de la ruta"></div>
 
-                                <button class="btn btn-secondary" onclick="startTour()" aria-label="Comenzar la ruta turística">
+                <button class="btn btn-secondary" onclick="startTour()" aria-label="Comenzar la ruta turística" style="margin: 30px 0;">
                     <span class="lang-es-inline">🎭 Comenzar la Ruta</span>
                     <span class="lang-en-inline">🎭 Start the Route</span>
                     <span class="lang-fr-inline">🎭 Commencer l'Itinéraire</span>
                 </button>
+
+                <!-- Lista de ubicaciones con botones -->
+                <div style="margin: 40px 0; padding: 30px; background: rgba(255, 255, 255, 0.95); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                    <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary-color); font-size: 28px;">
+                        <span class="lang-es-inline">📍 Ubicaciones de la Ruta</span>
+                        <span class="lang-en-inline">📍 Route Locations</span>
+                        <span class="lang-fr-inline">📍 Lieux de l'Itinéraire</span>
+                    </h2>
+                    <div id="locations-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; margin-bottom: 20px;">
+                        <!-- Los botones se generarán dinámicamente aquí -->
+                    </div>
+                </div>
             </section>
 
             <div id="location-container" class="hidden" role="region" aria-live="polite"></div>
@@ -1514,7 +1526,6 @@
                     <p class="lang-es">Nacido en Arévalo (Ávila), España, ha dedicado su vida a estudiar Arévalo, su historia y arte, tradiciones y personajes. Ha publicado varios libros, unos en compañía, y otros en solitario. El Diario de Ávila, con el que colabora, ha publicado más de 300 artículos y una columna semanal con el título genérico de "Desde mi torre Mudéjar". Le nombraron el año 2003 Cronista Oficial de la Ciudad de Arévalo y el año 2007 Miembro Colaborador de la Institución Gran Duque de Alba.</p>
                     <p class="lang-en">Born in Arévalo (Ávila), Spain, he has dedicated his life to studying Arévalo, its history and art, traditions and characters. He has published several books, some in collaboration and others alone. The Diario de Ávila, with which he collaborates, has published more than 300 articles and a weekly column with the generic title "From my Mudéjar Tower." He was appointed Official Chronicler of the City of Arévalo in 2003 and Collaborating Member of the Institution Gran Duque de Alba in 2007.</p>
                     <p class="lang-fr">Né à Arévalo (Ávila), Espagne, il a consacré sa vie à l'étude d'Arévalo, son histoire et son art, ses traditions et ses personnages. Il a publié plusieurs livres, certains en collaboration et d'autres seul. Le Diario de Ávila, avec lequel il collabore, a publié plus de 300 articles et une chronique hebdomadaire sous le titre générique "Depuis ma tour Mudéjar". Il a été nommé Chroniqueur Officiel de la Ville d'Arévalo en 2003 et Membre Collaborateur de l'Institution Gran Duque de Alba en 2007.</p>
-					</div>
               `
             },
             {
@@ -2461,7 +2472,9 @@
                     </div>
 
                     <div style="text-align: center; margin-top: 30px;">
-                        <button class="btn" onclick="location.reload()" aria-label="Volver al inicio de la ruta">🔄 Volver al inicio</button>
+                        <button class="btn" onclick="location.reload()">
+                            🔄 <span class="lang-es-inline">Volver al inicio</span><span class="lang-en-inline">Back to start</span><span class="lang-fr-inline">Retour au début</span>
+                        </button>
                     </div>
                 `
             }
@@ -3111,7 +3124,109 @@
             if (typeof window.changeLanguage === 'function') {
                 window.changeLanguage(savedLang);
             }
+            
+            // Generar botones de ubicaciones
+            generateLocationButtons();
         });
+        
+        /**
+         * Genera los botones numerados para cada ubicación
+         */
+        function generateLocationButtons() {
+            const grid = document.getElementById('locations-grid');
+            if (!grid || !locations) return;
+            
+            locations.forEach((location, index) => {
+                const button = document.createElement('button');
+                button.className = 'btn';
+                button.style.cssText = `
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 12px;
+                    padding: 15px 20px;
+                    text-align: left;
+                    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+                    color: white;
+                    border: none;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                    font-size: 14px;
+                    width: 100%;
+                `;
+                
+                // Número del botón
+                const number = document.createElement('span');
+                number.style.cssText = `
+                    background: white;
+                    color: var(--primary-color);
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: bold;
+                    font-size: 16px;
+                    flex-shrink: 0;
+                `;
+                number.textContent = index + 1;
+                
+                // Texto del botón (trilingüe)
+                const textContainer = document.createElement('span');
+                textContainer.style.cssText = `
+                    flex: 1;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: 1.4;
+                `;
+                
+                const textEs = document.createElement('span');
+                textEs.className = 'lang-es-inline';
+                textEs.textContent = location.title;
+                
+                const textEn = document.createElement('span');
+                textEn.className = 'lang-en-inline';
+                textEn.textContent = location.title_en || location.title;
+                
+                const textFr = document.createElement('span');
+                textFr.className = 'lang-fr-inline';
+                textFr.textContent = location.title_fr || location.title;
+                
+                textContainer.appendChild(textEs);
+                textContainer.appendChild(textEn);
+                textContainer.appendChild(textFr);
+                
+                button.appendChild(number);
+                button.appendChild(textContainer);
+                
+                // Evento click para ir a la ubicación
+                button.onclick = () => {
+                    // Ocultar pantalla de bienvenida
+                    const welcomeEl = document.getElementById('welcome');
+                    welcomeEl.classList.add('hidden');
+                    welcomeEl.setAttribute('aria-hidden', 'true');
+                    
+                    // Ir a la ubicación
+                    currentLocation = index;
+                    showLocation(index);
+                };
+                
+                // Efectos hover
+                button.onmouseenter = () => {
+                    button.style.transform = 'translateY(-3px)';
+                    button.style.boxShadow = '0 8px 25px rgba(0,0,0,0.2)';
+                };
+                button.onmouseleave = () => {
+                    button.style.transform = 'translateY(0)';
+                    button.style.boxShadow = '0 4px 15px rgba(0,0,0,0.1)';
+                };
+                
+                grid.appendChild(button);
+            });
+        }
     </script>
 </body>
 </html>
