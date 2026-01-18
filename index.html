@@ -2683,9 +2683,9 @@
                 iframe.loading = 'lazy';
                 iframe.referrerPolicy = 'no-referrer-when-downgrade';
 
-                // URL del mapa embebido centrado en Arévalo con vista satélite
-                // Mostramos el centro de la ciudad
-                iframe.src = `https://maps.google.com/maps?q=41.0645,-4.7200&hl=es&z=14&t=k&output=embed`;
+                // URL del mapa embebido centrado en el IES Adaja
+                // Calle Valcarcel, Arévalo - Zoom 14
+                iframe.src = `https://maps.google.com/maps?q=IES+Adaja+Arévalo&hl=es&z=14&t=k&output=embed`;
 
                 mapContainer.innerHTML = '';
                 mapContainer.appendChild(iframe);
@@ -2728,6 +2728,30 @@
                 currentLocation--;
                 showLocation(currentLocation);
             }
+        }
+
+        /**
+         * Vuelve a la pantalla inicial de bienvenida
+         */
+        window.goBackToHome = function() {
+            // Detener cualquier audio que esté reproduciéndose
+            stopCurrentAudio();
+            
+            // Ocultar el contenedor de ubicaciones
+            const locationContainer = document.getElementById('location-container');
+            locationContainer.classList.add('hidden');
+            locationContainer.setAttribute('aria-hidden', 'true');
+            
+            // Mostrar la pantalla de bienvenida
+            const welcomeEl = document.getElementById('welcome');
+            welcomeEl.classList.remove('hidden');
+            welcomeEl.removeAttribute('aria-hidden');
+            
+            // Resetear la ubicación actual
+            currentLocation = 0;
+            
+            // Hacer scroll al inicio
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         /**
@@ -2877,6 +2901,12 @@
                     <span class="lang-fr-inline">Suivant →</span>
                         </button>
                     </nav>
+
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="btn" onclick="goBackToHome()" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">
+                            🏠 <span class="lang-es-inline">Volver al inicio</span><span class="lang-en-inline">Back to start</span><span class="lang-fr-inline">Retour au début</span>
+                        </button>
+                    </div>
 
                     ${index < locations.length - 1 ? `
                         <div style="text-align: center; margin-top: 30px; padding-top: 30px; border-top: 2px solid #f8f9fa;">
