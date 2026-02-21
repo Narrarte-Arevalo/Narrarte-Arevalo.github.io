@@ -922,7 +922,150 @@
                 page-break-inside: avoid;
             }
         }
-    </style>
+   
+/* ====================================
+   SISTEMA DE AUDIO PARA TEXTOS
+   ==================================== */
+
+/* Reproductor de audio para textos largos */
+.audio-text-player {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.audio-text-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.audio-text-btn {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1em;
+}
+
+.audio-text-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.audio-text-btn.playing {
+    background: var(--accent-red);
+    color: white;
+}
+
+.audio-text-progress {
+    flex: 1;
+    min-width: 150px;
+    height: 8px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.audio-text-progress-fill {
+    height: 100%;
+    background: white;
+    width: 0%;
+    transition: width 0.1s linear;
+    border-radius: 4px;
+}
+
+.audio-text-time {
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    min-width: 90px;
+}
+
+/* Botón inline para poemas/textos cortos */
+.audio-inline-btn {
+    background: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-red) 100%);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 10px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+.audio-inline-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.audio-inline-btn.playing {
+    background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Botón para citas */
+.audio-quote-btn {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.85em;
+    transition: all 0.3s ease;
+}
+
+.audio-quote-btn:hover {
+    background: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.quote-audio-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .audio-text-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .audio-text-progress {
+        width: 100%;
+    }
+    
+    .audio-text-time {
+        text-align: center;
+    }
+}
+
+   </style>
 </head>
 <body class="es">
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -1081,7 +1224,8 @@
 
 					<div class="poem">
                     <strong><span class="lang-es-inline">RECORDAD VIVIR</span><span class="lang-en-inline">REMEMBER TO LIVE</span><span class="lang-fr-inline">SOUVENEZ-VOUS DE VIVRE</span></strong><br><br>
-                    El mundo se abre a vuestros capilares,<br>
+                    <p class="lang-es">
+					El mundo se abre a vuestros capilares,<br>
                     Podéis tocar el infinito<br>
                     en la posibilidad de un futuro<br>
                     que emerge entre brotes de esperanza y miedo.<br><br>
@@ -1104,7 +1248,58 @@
                     Recordad que tenéis todo que ganar<br>
                     y poco que perder,<br>
                     recordad que soñar es vivir.<br>
-                    <div class="author">Pablo Malmierca</div>
+					</p>
+					<p class="lang-en">
+                   The world opens up to your capillaries,<br>
+You can touch infinity<br>
+in the possibility of a future<br>
+that emerges between bursts of hope and fear.<br>
+Today is the beginning<br>
+of everything you have left to live,<br>
+Today is the beginning<br>
+of a dream you can reach with your fingertips.<br>
+Remember to live,<br>
+savour every moment,<br>
+every helping hand,<br>
+every love,<br>
+the broken branches along the way,<br>
+the successes,<br>
+the desire to be and exist in the world.<br>
+Remember that life<br>
+can be navigated with a steady foot,<br>
+but that even the strongest can ask for help.<br>
+Remember that you are the path,<br>
+the compass, and the destination.<br>
+Remember that you have everything to gain<br>
+and little to lose,<br>
+remember that to dream is to live.<br>
+					</p>
+					<p class="lang-fr">
+Le monde s'ouvre à vos capillaires,<br>
+Vous pouvez toucher l'infini<br>
+dans la possibilité d'un avenir<br>
+qui émerge entre des pousses d'espoir et de peur.<br>
+Aujourd'hui est le début<br>
+de tout ce qui vous reste à vivre,<br>
+Aujourd'hui est le début<br>
+d'un rêve que vous pouvez atteindre du bout des doigts.<br>
+N'oubliez pas de vivre,<br>
+de savourer chaque instant,<br>
+chaque main qui vous aide,<br>
+chaque amour,<br>
+les branches cassées sur le chemin,<br>
+les succès,<br>
+le désir d'être et d'exister dans le monde.<br>
+N'oubliez pas que la vie<br>
+peut être parcourue d'un pas ferme,<br>
+mais que même les plus forts peuvent demander de l'aide.<br>
+N'oubliez pas que vous êtes le chemin,<br>
+la boussole et la destination.<br>
+N'oubliez pas que vous avez tout à gagner<br>
+et peu à perdre,<br>
+n'oubliez pas que rêver, c'est vivre.<br>               
+					</p>
+					<div class="author">Pablo Malmierca</div>
                 </div>
 
                 `
@@ -1142,7 +1337,7 @@
                     <p class="lang-fr">Jesús Hedo Serrano était un professeur de Langue et Littérature de Soria à l'IES Eulogio Florentino Sanz. Il a publié l'Anthologie de Nicasio Hernández Luquero, écrivain, poète et traducteur d'Arévalo. Nous verrons plusieurs points liés à cet auteur sur notre itinéraire.</p>
 
                     <div class="poem">
-                        <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
+                       <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
                         <strong><span class="lang-es-inline">ANSIAS DE PAZ</span><span class="lang-en-inline">LONGING FOR PEACE</span><span class="lang-fr-inline">DÉSIR DE PAIX</span></strong><br><br>
                         Me va cansando el caminar constante<br>
                         despacio y solo por la amarga vida<br>
@@ -1526,7 +1721,38 @@
                     <p class="lang-es">Nacido en Arévalo (Ávila), España, ha dedicado su vida a estudiar Arévalo, su historia y arte, tradiciones y personajes. Ha publicado varios libros, unos en compañía, y otros en solitario. El Diario de Ávila, con el que colabora, ha publicado más de 300 artículos y una columna semanal con el título genérico de "Desde mi torre Mudéjar". Le nombraron el año 2003 Cronista Oficial de la Ciudad de Arévalo y el año 2007 Miembro Colaborador de la Institución Gran Duque de Alba.</p>
                     <p class="lang-en">Born in Arévalo (Ávila), Spain, he has dedicated his life to studying Arévalo, its history and art, traditions and characters. He has published several books, some in collaboration and others alone. The Diario de Ávila, with which he collaborates, has published more than 300 articles and a weekly column with the generic title "From my Mudéjar Tower." He was appointed Official Chronicler of the City of Arévalo in 2003 and Collaborating Member of the Institution Gran Duque de Alba in 2007.</p>
                     <p class="lang-fr">Né à Arévalo (Ávila), Espagne, il a consacré sa vie à l'étude d'Arévalo, son histoire et son art, ses traditions et ses personnages. Il a publié plusieurs livres, certains en collaboration et d'autres seul. Le Diario de Ávila, avec lequel il collabore, a publié plus de 300 articles et une chronique hebdomadaire sous le titre générique "Depuis ma tour Mudéjar". Il a été nommé Chroniqueur Officiel de la Ville d'Arévalo en 2003 et Membre Collaborateur de l'Institution Gran Duque de Alba en 2007.</p>
-              `
+ <button class="audio-inline-btn" data-audio="Audio/Richar1.mp3" onclick="playInlineAudio(this)">
+    🎧 <span class="lang-es-inline">Escuchar primera parte del audio</span>
+</button>
+<br>
+<button class="audio-inline-btn" data-audio="Audio/Richar2.mp3" onclick="playInlineAudio(this)">
+    🎧 <span class="lang-es-inline">Escuchar segunda parte del audio</span>
+</button>
+<br>
+<button class="audio-inline-btn" data-audio="Audio/Richar3.mp3" onclick="playInlineAudio(this)">
+    🎧 <span class="lang-es-inline">Escuchar tercera parte del audio</span>
+</button>   
+<br>   
+<div class="audio-text-player" data-audio="Audio/Richar1.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar parte 1</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
+<div class="quote">
+    <div class="quote-audio-wrapper">
+        <h3 class="section-title literature">💬 Testimonios Literarios</h3>
+        <button class="audio-quote-btn" data-audio="Audio/Richar1.mp3" onclick="playInlineAudio(this)">
+            🎙️ <span class="lang-es-inline">Escuchar</span>
+        </button>
+    </div>
+    <p>Contenido de la cita...</p>
+</div>     `
             },
             {
                 title: "ARCO DEL ALCOCER",
@@ -3257,6 +3483,191 @@
                 grid.appendChild(button);
             });
         }
-    </script>
+    
+// ====================================
+// SISTEMA DE AUDIO PARA TEXTOS
+// ====================================
+
+let currentTextAudio = null;
+
+/**
+ * Reproduce/pausa audio de un texto
+ */
+window.toggleTextAudio = function(button) {
+    const container = button.closest('.audio-text-player');
+    const audioUrl = container.dataset.audio;
+    const progressFill = container.querySelector('.audio-text-progress-fill');
+    const timeDisplay = container.querySelector('.audio-text-time');
+    
+    // Si hay audio reproduciéndose y es el mismo
+    if (currentTextAudio && currentTextAudio.dataset.source === audioUrl) {
+        if (currentTextAudio.audio.paused) {
+            currentTextAudio.audio.play();
+            button.classList.add('playing');
+            updateButtonText(button, 'Pausar', 'Pause', 'Pause');
+        } else {
+            currentTextAudio.audio.pause();
+            button.classList.remove('playing');
+            updateButtonText(button, 'Reproducir', 'Play', 'Lire');
+        }
+    } else {
+        // Detener audio anterior
+        stopAllTextAudio();
+        
+        // Crear nuevo audio
+        const audio = new Audio(audioUrl);
+        audio.dataset.source = audioUrl;
+        
+        currentTextAudio = {
+            audio: audio,
+            button: button,
+            progressFill: progressFill,
+            timeDisplay: timeDisplay,
+            container: container
+        };
+        
+        // Eventos
+        audio.addEventListener('timeupdate', () => {
+            if (currentTextAudio && currentTextAudio.audio === audio) {
+                const percentage = (audio.currentTime / audio.duration) * 100;
+                progressFill.style.width = percentage + '%';
+                timeDisplay.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+            }
+        });
+        
+        audio.addEventListener('ended', () => {
+            button.classList.remove('playing');
+            updateButtonText(button, 'Reproducir', 'Play', 'Lire');
+            progressFill.style.width = '0%';
+        });
+        
+        audio.addEventListener('error', (e) => {
+            console.error('Error al cargar audio:', e);
+            alert('No se pudo cargar el archivo de audio. Verifica la ruta: ' + audioUrl);
+            stopAllTextAudio();
+        });
+        
+        audio.play();
+        button.classList.add('playing');
+        updateButtonText(button, 'Pausar', 'Pause', 'Pause');
+    }
+};
+
+/**
+ * Busca una posición en el audio de texto
+ */
+window.seekTextAudio = function(event, progressBar) {
+    if (!currentTextAudio) return;
+    
+    const rect = progressBar.getBoundingClientRect();
+    const clickX = event.clientX - rect.left;
+    const percentage = clickX / rect.width;
+    currentTextAudio.audio.currentTime = percentage * currentTextAudio.audio.duration;
+};
+
+/**
+ * Reproduce audio inline (para poemas/citas)
+ */
+window.playInlineAudio = function(button) {
+    const audioUrl = button.dataset.audio;
+    
+    // Si ya está reproduciéndose este audio, pausarlo
+    if (currentTextAudio && currentTextAudio.audio.dataset.source === audioUrl) {
+        if (!currentTextAudio.audio.paused) {
+            currentTextAudio.audio.pause();
+            button.classList.remove('playing');
+            return;
+        } else {
+            currentTextAudio.audio.play();
+            button.classList.add('playing');
+            return;
+        }
+    }
+    
+    // Detener audio anterior
+    stopAllTextAudio();
+    
+    // Crear y reproducir nuevo audio
+    const audio = new Audio(audioUrl);
+    audio.dataset.source = audioUrl;
+    
+    currentTextAudio = {
+        audio: audio,
+        button: button
+    };
+    
+    audio.addEventListener('ended', () => {
+        button.classList.remove('playing');
+    });
+    
+    audio.addEventListener('error', (e) => {
+        console.error('Error al cargar audio:', e);
+        alert('No se pudo cargar el archivo de audio. Verifica la ruta: ' + audioUrl);
+        button.classList.remove('playing');
+    });
+    
+    audio.play();
+    button.classList.add('playing');
+};
+
+/**
+ * Detiene todos los audios de texto
+ */
+function stopAllTextAudio() {
+    if (currentTextAudio) {
+        currentTextAudio.audio.pause();
+        currentTextAudio.audio.currentTime = 0;
+        
+        if (currentTextAudio.button) {
+            currentTextAudio.button.classList.remove('playing');
+            if (currentTextAudio.button.classList.contains('audio-text-btn')) {
+                updateButtonText(currentTextAudio.button, 'Reproducir', 'Play', 'Lire');
+            }
+        }
+        
+        if (currentTextAudio.progressFill) {
+            currentTextAudio.progressFill.style.width = '0%';
+        }
+        
+        currentTextAudio = null;
+    }
+}
+
+/**
+ * Actualiza el texto de un botón según el idioma
+ */
+function updateButtonText(button, es, en, fr) {
+    const spans = button.querySelectorAll('span');
+    spans.forEach(span => {
+        if (span.classList.contains('lang-es-inline')) {
+            span.textContent = es;
+        } else if (span.classList.contains('lang-en-inline')) {
+            span.textContent = en;
+        } else if (span.classList.contains('lang-fr-inline')) {
+            span.textContent = fr;
+        }
+    });
+}
+
+/**
+ * Formatea tiempo en minutos:segundos
+ */
+function formatTime(seconds) {
+    if (isNaN(seconds)) return '0:00';
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+}
+
+// Detener audio de texto al cambiar de ubicación
+const originalShowLocation = window.showLocation;
+window.showLocation = function(index) {
+    stopAllTextAudio();
+    originalShowLocation(index);
+};	
+	
+	
+	
+	</script>
 </body>
 </html>
