@@ -1226,7 +1226,10 @@
 </button>
 					<div class="poem">
                     <strong><span class="lang-es-inline">RECORDAD VIVIR</span><span class="lang-en-inline">REMEMBER TO LIVE</span><span class="lang-fr-inline">SOUVENEZ-VOUS DE VIVRE</span></strong><br><br>
-                    <p class="lang-es">
+ <button class="audio-inline-btn" data-audio="Audio/Poemapablo.mp3" onclick="playInlineAudio(this)">
+ 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+</button>
+                   <p class="lang-es">
 					El mundo se abre a vuestros capilares,<br>
                     Podéis tocar el infinito<br>
                     en la posibilidad de un futuro<br>
@@ -1302,9 +1305,6 @@
 					n'oubliez pas que rêver, c'est vivre.<br>               
 					</p>
 					<div class="author">Pablo Malmierca</div>
-<button class="audio-inline-btn" data-audio="Audio/Poemapablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>
                </div>
 
                 `
@@ -1841,18 +1841,32 @@ customNumber: "6b",
                 content: `
                     <h3 class="section-title biography">✍️ GÓMEZ MANRIQUE</h3>
                     <img src="Imagenes/Manrique.png" alt="Gómez Manrique" class="image-thumbnail" loading="lazy"/>
+<br>
+<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
+  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+</button>                   
                     <p class="lang-es">Dentro de la educación recibida por Isabel y su hermano Alfonso en la Corte de Arévalo, su abuela Isabel de Barcelos, de la casa de Avís, de origen portugués tuvo un papel muy relevante, y eso hizo que el idioma escogido por Isabel infanta para hacer este peculiar regalo a su hermano, el día que se celebraba su mayoría de edad, fuera el portugués. Gómez Manrique, el autor de los fados era un reputado literato de la corte y fue a él a quien la infanta hizo el encargo.</p>
                     <p class="lang-en">Within the education received by Isabella and her brother Alfonso at the Court of Arévalo, their grandmother Isabella of Barcelos, of the house of Avís, of Portuguese origin, played a very relevant role, and this meant that the language chosen by the Infanta Isabella to make this peculiar gift to her brother, on the day his coming of age was celebrated, was Portuguese. Gómez Manrique, the author of the fados, was a reputed man of letters at court and it was to him that the Infanta entrusted the commission.</p>
                     <p class="lang-fr">Dans l'éducation reçue par Isabelle et son frère Alphonse à la Cour d'Arévalo, leur grand-mère Isabelle de Barcelos, de la maison d'Avís, d'origine portugaise, a joué un rôle très important, et cela a fait que la langue choisie par l'infante Isabelle pour faire ce cadeau particulier à son frère, le jour où sa majorité était célébrée, était le portugais. Gómez Manrique, l'auteur des fados, était un homme de lettres réputé de la cour et c'est à lui que l'infante a confié la commission.</p>
                     <p class="lang-es">Estos fados fueron recreados por la Asociación Cultural la Queda en varias ocasiones.</p>
                     <p class="lang-en">These fados were recreated by the Cultural Association La Queda on several occasions.</p>
                     <p class="lang-fr">Ces fados ont été recréés par l'Association Culturelle La Queda à plusieurs reprises.</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
-  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                     <div class="quote">
                        <h3 class="section-title literature"><span class="lang-es-inline">💬 Testimonios Literarios</span><span class="lang-en-inline">💬 Literary Testimonies</span><span class="lang-fr-inline">💬 Témoignages Littéraires</span></h3>
 						<img src="Imagenes/FadosIsabel.png" alt="Los Fados de Isabel" class="image-thumbnail" loading="lazy"/>
+<div class="audio-text-player" data-audio="Audio/6bFadosIsabel1.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
 							<p>Ilustrisimo y bien auenturado Principe,
 							e muy  poderoso Rey e soberano Señor.
 							Como la diuulgada fama de aquel festiual día de vuestro nascimiento e del
@@ -1903,6 +1917,20 @@ customNumber: "6b",
                     </div>
                     <div class="poem">
                         <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
+<div class="audio-text-player" data-audio="Audio/6bFadosIsabel2.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
+
                         <strong><span class="lang-es-inline">A tu real excelencia</span><span class="lang-en-inline">To your royal excellence</span><span class="lang-fr-inline">À votre excellence royale</span></strong><br>
                         venimos aquestas fadas,<br>
                         ynduzidas e guiadas<br>
@@ -1952,9 +1980,6 @@ customNumber: "6b",
                         e sean tus fechos tales<br>
                         que merezcas amas glorías<br>
                         terrenas e celestiales.<br>
-<button class="audio-inline-btn" data-audio="Audio/6bFadosIsabel.mp3" onclick="playInlineAudio(this)">
-  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                     </div>
                 `
             },
@@ -3493,31 +3518,73 @@ customNumber: "10a",
                 `;
  number.textContent = location.customNumber || (index + 1);
                 
-                // Texto del botón (trilingüe)
-                const textContainer = document.createElement('span');
-                textContainer.style.cssText = `
-                    flex: 1;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    line-height: 1.4;
-                `;
-                
-                const textEs = document.createElement('span');
-                textEs.className = 'lang-es-inline';
-                textEs.textContent = location.title;
-                
-                const textEn = document.createElement('span');
-                textEn.className = 'lang-en-inline';
-                textEn.textContent = location.title_en || location.title;
-                
-                const textFr = document.createElement('span');
-                textFr.className = 'lang-fr-inline';
-                textFr.textContent = location.title_fr || location.title;
-                
-                textContainer.appendChild(textEs);
-                textContainer.appendChild(textEn);
-                textContainer.appendChild(textFr);
-                
+// Texto del botón (trilingüe con subtítulo)
+const textContainer = document.createElement('span');
+textContainer.style.cssText = `
+    flex: 1;
+    overflow: hidden;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+`;
+
+// Contenedor del título
+const titleContainer = document.createElement('div');
+titleContainer.style.cssText = `
+    font-weight: bold;
+    font-size: 15px;
+`;
+
+const textEs = document.createElement('span');
+textEs.className = 'lang-es-inline';
+textEs.textContent = location.title;
+
+const textEn = document.createElement('span');
+textEn.className = 'lang-en-inline';
+textEn.textContent = location.title_en || location.title;
+
+const textFr = document.createElement('span');
+textFr.className = 'lang-fr-inline';
+textFr.textContent = location.title_fr || location.title;
+
+titleContainer.appendChild(textEs);
+titleContainer.appendChild(textEn);
+titleContainer.appendChild(textFr);
+
+// Contenedor del subtítulo (si existe)
+let subtitleContainer = null;
+if (location.subtitle) {
+    subtitleContainer = document.createElement('div');
+    subtitleContainer.style.cssText = `
+        font-size: 12px;
+        opacity: 0.9;
+        font-weight: normal;
+        font-style: italic;
+    `;
+    
+    const subEs = document.createElement('span');
+    subEs.className = 'lang-es-inline';
+    subEs.textContent = location.subtitle;
+    
+    const subEn = document.createElement('span');
+    subEn.className = 'lang-en-inline';
+    subEn.textContent = location.subtitle_en || location.subtitle;
+    
+    const subFr = document.createElement('span');
+    subFr.className = 'lang-fr-inline';
+    subFr.textContent = location.subtitle_fr || location.subtitle;
+    
+    subtitleContainer.appendChild(subEs);
+    subtitleContainer.appendChild(subEn);
+    subtitleContainer.appendChild(subFr);
+}
+
+// Añadir título y subtítulo al contenedor
+textContainer.appendChild(titleContainer);
+if (subtitleContainer) {
+    textContainer.appendChild(subtitleContainer);
+}                
                 button.appendChild(number);
                 button.appendChild(textContainer);
                 
