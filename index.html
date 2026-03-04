@@ -3847,6 +3847,59 @@ if (originalShowLocation) {
 }
 
 	
+// ====================================
+// SISTEMA DE CÓDIGOS QR - DEEP LINKING
+// ====================================
+
+/**
+ * Detecta si hay un parámetro location en la URL 
+ * y va directamente a esa ubicación
+ * 
+ * Ejemplo de uso:
+ * https://narrarte-arevalo.github.io/?location=0  → Va a la primera ubicación
+ * https://narrarte-arevalo.github.io/?location=5  → Va a la sexta ubicación
+ */
+function checkDeepLink() {
+    // Obtener parámetros de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const locationParam = urlParams.get('location');
+    
+    // Si hay parámetro location
+    if (locationParam !== null) {
+        const locationIndex = parseInt(locationParam, 10);
+        
+        // Validar que el índice sea válido
+        if (!isNaN(locationIndex) && locationIndex >= 0 && locationIndex < locations.length) {
+            console.log(`🔗 Deep link detectado: Ir a ubicación ${locationIndex}`);
+            
+            // Ocultar pantalla de bienvenida
+            const welcomeEl = document.getElementById('welcome');
+            if (welcomeEl) {
+                welcomeEl.classList.add('hidden');
+                welcomeEl.setAttribute('aria-hidden', 'true');
+            }
+            
+            // Pequeño delay para asegurar que todo está cargado
+            setTimeout(() => {
+                currentLocation = locationIndex;
+                showLocation(locationIndex);
+                
+                // Hacer scroll al inicio
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 300);
+        } else {
+            console.warn(`⚠️ Índice de ubicación inválido: ${locationParam}`);
+        }
+    }
+}
+
+// Ejecutar cuando el DOM esté completamente cargado
+// IMPORTANTE: Este listener debe ejecutarse DESPUÉS de que 
+// se haya definido el array locations
+window.addEventListener('DOMContentLoaded', () => {
+    // Esperar un momento para asegurar que locations está definido
+    setTimeout(checkDeepLink, 100);
+});
 	
 	
 	</script>
