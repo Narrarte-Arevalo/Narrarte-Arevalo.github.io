@@ -617,6 +617,29 @@
             top: 0;
         }
 
+        /* Panel de ubicaciones */
+        .locations-panel {
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .locations-panel-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            font-size: clamp(1.3em, 3vw, 1.75em);
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
         /* Sección de despedida */
         .farewell-section {
             text-align: center;
@@ -659,48 +682,6 @@
         .farewell-box p {
             font-size: 1.1em;
             margin-top: 0;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-
-            .welcome-screen,
-            .location-card {
-                padding: 20px;
-            }
-
-            .navigation {
-                flex-direction: column;
-            }
-
-            .navigation .btn {
-                width: 100%;
-            }
-
-            .map-container {
-                height: 300px;
-            }
-
-            .intro-text {
-                padding: 15px;
-            }
-
-            .poem, .quote, .historical-info {
-                padding: 15px;
-                font-size: 0.95em;
-            }
-
-            .audio-player {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .audio-controls {
-                justify-content: center;
-            }
         }
 
         /* ====================================
@@ -1025,6 +1006,16 @@
     50% { opacity: 0.7; }
 }
 
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to   { transform: scale(1);   opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
 /* Botón para citas */
 .audio-quote-btn {
     background: var(--secondary-color);
@@ -1122,13 +1113,13 @@
                 </button>
 
                 <!-- Lista de ubicaciones con botones -->
-                <div style="margin: 40px 0; padding: 30px; background: rgba(255, 255, 255, 0.95); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
-                    <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary-color); font-size: 28px;">
+                <div class="locations-panel">
+                    <h2 class="locations-panel-title">
                         <span class="lang-es-inline">📍 Ubicaciones de la Ruta</span>
                         <span class="lang-en-inline">📍 Route Locations</span>
                         <span class="lang-fr-inline">📍 Lieux de l'Itinéraire</span>
                     </h2>
-                    <div id="locations-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; margin-bottom: 20px;">
+                    <div id="locations-grid" class="locations-grid">
                         <!-- Los botones se generarán dinámicamente aquí -->
                     </div>
                 </div>
@@ -2392,7 +2383,7 @@ customNumber: "7b",
                         
 						<p class="lang-es"><strong>Nave de la Prensa:</strong> Una sala que alberga grandes toneles de madera rotulados con los nombres de periódicos históricos de Arévalo. Actualmente, el acceso a esta área está restringido debido a un derrumbe en la bóveda, aunque existen planes municipales para su restauración.</p>
                         <p class="lang-en"><strong>Press Hall:</strong> A room that houses large wooden barrels labeled with the names of historical newspapers from Arévalo. Currently, access to this area is restricted due to a collapse in the vault, although there are municipal plans for its restoration.</p>
-						<p class="lang-fr">"><strong>La nef de la Presse:</strong> Une salle qui abrite de grands tonneaux en bois portant les noms de journaux historiques d’Arévalo. Actuellement, l’accès à cet espace est restreint en raison de l’effondrement d’une partie de la voûte, bien que des projets municipaux de restauration existent.</p> 
+						<p class="lang-fr"><strong>La nef de la Presse:</strong> Une salle qui abrite de grands tonneaux en bois portant les noms de journaux historiques d’Arévalo. Actuellement, l’accès à cet espace est restreint en raison de l’effondrement d’une partie de la voûte, bien que des projets municipaux de restauration existent.</p> 
 					</div>
 
                     <h3 class="section-title biography">✍️ MAROLO PEROTAS</h3>
@@ -3075,6 +3066,7 @@ customNumber: "10a",
         function showLocation(index) {
             // Detener audio actual al cambiar de ubicación
             stopCurrentAudio();
+            if (typeof stopAllTextAudio === 'function') stopAllTextAudio();
 
             // Validar índice
             if (index < 0 || index >= locations.length) {
@@ -3176,7 +3168,7 @@ customNumber: "10a",
                             target="_blank"
                             class="btn"
                             style="display: inline-block; text-decoration: none;"
-                            aria-label="Open location on Google Maps">
+                            aria-label="${getAriaLabel('Ver en Street View', 'View on Street View', 'Voir sur Street View')}">
                             <span class="lang-es-inline">📍 Ver en Street View</span>
                             <span class="lang-en-inline">📍 View on Street View</span>
                             <span class="lang-fr-inline">📍 Voir sur Street View</span>
@@ -3432,31 +3424,6 @@ customNumber: "10a",
                 document.addEventListener('keydown', escHandler);
             }
         });
-
-        // Animaciones CSS para el lightbox
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes zoomIn {
-                from {
-                    transform: scale(0.8);
-                    opacity: 0;
-                }
-                to {
-                    transform: scale(1);
-                    opacity: 1;
-                }
-            }
-
-            @keyframes fadeOut {
-                from {
-                    opacity: 1;
-                }
-                to {
-                    opacity: 0;
-                }
-            }
-        `;
-        document.head.appendChild(style);
 
         // ====================================
         // INICIALIZACIÓN DEL SISTEMA TRILINGÜE
@@ -3827,26 +3794,6 @@ function updateInlineButtonText(button, es, en, fr) {
     }
 }
 
-/**
- * Formatea tiempo en minutos:segundos
- */
-function formatTime(seconds) {
-    if (isNaN(seconds)) return '0:00';
-    const mins = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    return `${mins}:${secs.toString().padStart(2, '0')}`;
-}
-
-// Detener audio de texto al cambiar de ubicación
-const originalShowLocation = window.showLocation;
-if (originalShowLocation) {
-    window.showLocation = function(index) {
-        stopAllTextAudio();
-        originalShowLocation(index);
-    };
-}
-
-	
 // ====================================
 // SISTEMA DE CÓDIGOS QR - DEEP LINKING
 // ====================================
