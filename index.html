@@ -1208,18 +1208,28 @@
 					<p class="lang-en">IES Adaja is one of the two public secondary schools in Arévalo. We want to share our historical, artistic, and literary route with all of you. We hope you enjoy it and discover the corners of Arévalo accompanied by literature and music. What more could you ask for?</p>
 					<p class="lang-fr">L'IES Adaja est l'un des deux lycées publics d'Arévalo. Nous voulons partager notre itinéraire historique, artistique et littéraire avec vous tous. Nous espérons que vous l'apprécierez et découvrirez les coins d'Arévalo accompagnés de littérature et de musique. Que demander de plus?</p>
 					<h3 class="section-title biography">✍️ PABLO MALMIERCA</h3>
-                    <img src="Imagenes/Pablo.png" alt="Pablo Malmierca" class="image-thumbnail" loading="lazy"/>
+                    <img src="Imagenes/Pablo.png" alt="Pablo Malmierca" class="image-thumbnail" loading="lazy"/><br>
+				<button class="audio-inline-btn" data-audio="Audio/1PabloMalmiercaBio.mp3" onclick="playInlineAudio(this)">
+				 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+				</button><br>
 					<p class="lang-es">Pablo Malmierca es un poeta y profesor zamorano afincado en Salamanca desde los 18 años. Licenciado en Filología Hispánica, ejerce como docente de secundaria y es una figura destacada en el ámbito literario de Castilla y León. Es miembro del Seminario Permanente Claudio Rodríguez y cofundador de la revista de poesía y pensamiento Intercostal. Autor de obras de poesía, narrativa y ensayo.</p>
                     <p class="lang-en">Pablo Malmierca is a poet and teacher from Zamora who has lived in Salamanca since age 18. With a degree in Hispanic Philology, he works as a high school teacher and is a prominent figure in the literary scene of Castilla y León. He is a member of the Claudio Rodríguez Permanent Seminar and co-founder of the poetry and thought magazine Intercostal. Author of poetry, narrative, and essays.</p>
                     <p class="lang-fr">Pablo Malmierca est un poète et professeur de Zamora établi à Salamanque depuis l'âge de 18 ans. Diplômé en philologie hispanique, il exerce comme enseignant du secondaire et est une figure éminente dans le milieu littéraire de Castille-et-León. Il est membre du Séminaire Permanent Claudio Rodríguez et cofondateur de la revue de poésie et de pensée Intercostal. Auteur d'œuvres de poésie, de narration et d'essais.</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>
 					<div class="poem">
-                    <strong><span class="lang-es-inline">RECORDAD VIVIR</span><span class="lang-en-inline">REMEMBER TO LIVE</span><span class="lang-fr-inline">SOUVENEZ-VOUS DE VIVRE</span></strong><br><br>
- <button class="audio-inline-btn" data-audio="Audio/Poemapablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>
+                    <strong><span class="lang-es-inline">RECORDAD VIVIR</span><span class="lang-en-inline">REMEMBER TO LIVE</span><span class="lang-fr-inline">SOUVENEZ-VOUS DE VIVRE</span></strong><br>
+<div class="audio-text-player" data-audio="Audio/1PoemaRecordadVivir.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
                    <p class="lang-es">
 					El mundo se abre a vuestros capilares,<br>
                     Podéis tocar el infinito<br>
@@ -1327,7 +1337,7 @@
    						<p class="lang-es">Esta locomotora forma parte de los fondos de la Fundación de los Ferrocarriles Españoles y está cedido su uso y depósito temporales al Ayuntamiento de Arévalo como monumento homenaje al ferrocarril en la localidad. Fue concedida por la atención y cuidado que la población de Arévalo dispensó a las víctimas del accidente ferroviario que tuvo lugar en Arévalo en 1989 y que le valió también el título de "muy humanitaria" que aparece en su escudo.</p>
                         <p class="lang-en">This locomotive is part of the Spanish Railway Foundation collection and its use and temporary deposit has been granted to the Arévalo City Council as a monument paying homage to the railway in the town. It was granted for the attention and care that the people of Arévalo gave to the victims of the railway accident that took place in Arévalo in 1989 and which also earned it the title of "very humanitarian" that appears on its coat of arms.</p>
 						<p class="lang-fr">Cette locomotive fait partie de la collection de la Fondation des Chemins de Fer Espagnols et son usage et dépôt temporaires ont été accordés à la Mairie d'Arévalo comme monument rendant hommage au chemin de fer dans la localité. Elle a été accordée pour l'attention et les soins que la population d'Arévalo a donnés aux victimes de l'accident ferroviaire qui a eu lieu à Arévalo en 1989 et qui lui a également valu le titre de "très humanitaire" qui figure sur son blason.</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
+<button class="audio-inline-btn" data-audio="Audio/2LaLocomotora.mp3" onclick="playInlineAudio(this)">
  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
 </button>
                    </div>
@@ -1336,12 +1346,22 @@
 					<p class="lang-es">Jesús Hedo Serrano fue un profesor soriano de Lengua y Literatura del IES Eulogio Florentino Sanz. Realizó la publicación de la Antología de Nicasio Hernández Luquero, escritor, poeta y traductor arevalense. Veremos varios puntos conectados con este autor en nuestra ruta.</p>
                     <p class="lang-en">Jesús Hedo Serrano was a teacher of Language and Literature from Soria at IES Eulogio Florentino Sanz. He published the Anthology of Nicasio Hernández Luquero, a writer, poet and translator from Arévalo. We will see several points connected with this author on our route.</p>
                     <p class="lang-fr">Jesús Hedo Serrano était un professeur de Langue et Littérature de Soria à l'IES Eulogio Florentino Sanz. Il a publié l'Anthologie de Nicasio Hernández Luquero, écrivain, poète et traducteur d'Arévalo. Nous verrons plusieurs points liés à cet auteur sur notre itinéraire.</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>
                     <div class="poem">
                        <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
-                        <strong><span class="lang-es-inline">ANSIAS DE PAZ</span><span class="lang-en-inline">LONGING FOR PEACE</span><span class="lang-fr-inline">DÉSIR DE PAIX</span></strong><br><br>
+                        <strong><span class="lang-es-inline">ANSIAS DE PAZ</span><span class="lang-en-inline">LONGING FOR PEACE</span><span class="lang-fr-inline">DÉSIR DE PAIX</span></strong><br>
+<div class="audio-text-player" data-audio="Audio/2JesusHedoBioyPoema.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
                         Me va cansando el caminar constante<br>
                         despacio y solo por la amarga vida<br>
                         viendo siempre ante mis pies tendida<br>
@@ -1357,9 +1377,6 @@
                         confiado franqueo y anheloso<br>
                         de besar a los míos en la frente.<br>
                         <div class="author">Nicasio Hernández Luquero</div>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
-  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>
                    </div>
 
                 `
@@ -1385,8 +1402,21 @@
 					<div class="poem">
                         <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
 						<img src="Imagenes/FrayJuan.png" alt="Fray Juan Gil" class="image-thumbnail" loading="lazy"/>
-						<strong><span class="lang-es-inline">ROMANCE DEL AREVALENSE QUE RESCATÓ A CERVANTES</span><span class="lang-en-inline">BALLAD OF THE MAN FROM ARÉVALO WHO RESCUED CERVANTES</span><span class="lang-fr-inline">ROMANCE DE L'HOMME D'ARÉVALO QUI SAUVA CERVANTÈS</span></strong><br><br>
-                        En Arévalo, la villa<br>
+						<strong><span class="lang-es-inline">ROMANCE DEL AREVALENSE QUE RESCATÓ A CERVANTES</span><span class="lang-en-inline">BALLAD OF THE MAN FROM ARÉVALO WHO RESCUED CERVANTES</span><span class="lang-fr-inline">ROMANCE DE L'HOMME D'ARÉVALO QUI SAUVA CERVANTÈS</span></strong><br>
+<div class="audio-text-player" data-audio="Audio/3RomanceLiberoCervantes.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div> 
+						En Arévalo, la villa<br>
                         la luz primera verá<br>
                         de una familia cristiana<br>
                         un niño llamado Juan.<br><br>
@@ -1447,12 +1477,22 @@
                         y de una "cuerda locura"<br>
                         que con nosotros está.<br>
                         <div class="author">Mª Jesús Eleta</div>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
 					</div>                  
 	                <div class="quote">
                     <h4 style="color: #667eea; margin-top: 20px; margin-bottom: 10px; font-size: 1.2em;"><span class="lang-es-inline">📖 El trato de Argel (1584)</span><span class="lang-en-inline">📖 The Treaty of Algiers (1584)</span><span class="lang-fr-inline">📖 Le Traité d'Alger (1584)</span></h4>
+<div class="audio-text-player" data-audio="Audio/3ElTratodeArgel.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div> 
 						<p class="lang-es">Miguel de Cervantes expresó su gratitud hacia Fray Juan Gil, el fraile trinitario que lo rescató del cautiverio en Argel en 1580, a través de su obra El trato de Argel (1584). En esta comedia, Cervantes relata su experiencia como prisionero y destaca la labor de los frailes trinitarios en la redención de cautivos.</p>
                         <p class="lang-en">Miguel de Cervantes expressed his gratitude towards Friar Juan Gil, the Trinitarian friar who rescued him from captivity in Algiers in 1580, through his work The Treaty of Algiers (1584). In this comedy, Cervantes recounts his experience as a prisoner and highlights the work of the Trinitarian friars in the redemption of captives.</p>
 						<p class="lang-fr">Miguel de Cervantes a exprimé sa gratitude envers Frère Juan Gil, le frère trinitaire qui l'a sauvé de la captivité à Alger en 1580, à travers son œuvre Le Traité d'Alger (1584). Dans cette comédie, Cervantes raconte son expérience en tant que prisonnier et souligne le travail des frères trinitaires dans la rédemption des captifs.</p>
@@ -1460,9 +1500,7 @@
 						<p>"Trujémonos a Argel, donde hallé que estaban rescatando los Padres de la Santísima Trinidad; hablélos, díjeles quién era, y movidos de caridad, aunque yo era extranjero, me rescataron en esta forma: que dieron por mí trescientos ducados, los ciento luego, y los doscientos cuando volviese el Padre de la Redención, que se quedaba en Argel, empeñado en cuatro mil ducados, que habían gastado más de lo que traía; porque a toda esta misericordia y liberalidad se extiende la caridad de estos Padres, que dan su libertad por la ajena, y se quedan cautivos por rescatar cautivos."</p>
 						<h4 style="color: #667eea; margin-top: 20px; margin-bottom: 10px; font-size: 1.2em;"><span class="lang-es-inline">📖 La española inglesa (1613)</span><span class="lang-en-inline">📖 The English Spanish Woman (1613)</span><span class="lang-fr-inline">📖 L'Espagnole Anglaise (1613)</span></h4>
                         <p>"... y así, me rescató un padre de la orden de la Santísima Trinidad, que en Argel estaba, y me sacó de la esclavitud."</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>
+
 					</div>
                 `
             },
@@ -1470,7 +1508,7 @@
                 title: "PLAZA DEL ARRABAL",
                 title_en: "ARRABAL SQUARE",
                 title_fr: "PLACE DE L'ARRABAL",
-customNumber: "4a",
+				customNumber: "4a",
 				subtitle: "MARÍA JESÚS ELETA",
                 subtitle_en: "MARÍA JESÚS ELETA",
                 subtitle_fr: "MARÍA JESÚS ELETA",
@@ -1498,16 +1536,29 @@ customNumber: "4a",
 						<p class="lang-fr">Le bâtiment le plus remarquable de la place est l'Église de Santo Domingo de Silos, l'actuelle paroisse.</p>
                     </div>
 						<h3 class="section-title biography">✍️ MARÍA JESÚS ELETA</h3>
-						<img src="Imagenes/Eleta.png" alt="María Jesús Eleta" class="image-thumbnail" loading="lazy"/>
+						<img src="Imagenes/Eleta.png" alt="María Jesús Eleta" class="image-thumbnail" loading="lazy"/><br>
+					<button class="audio-inline-btn" data-audio="Audio/4aMJesusEleta.mp3" onclick="playInlineAudio(this)">
+					 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+					</button>                   
 						<p class="lang-es">Mª Jesús Eleta Salazar es una profesora jubilada que dedica parte de su tiempo a la literatura, en concreto a la poesía, que comparte de manera activa en numerosos actos y eventos culturales. Su obra se ha visto divulgada a través de tres libros en los que encontramos poemas que aluden a sus propias experiencias, su vida en las localidades en que ha residido y entre las que se encuentra Arévalo.</p>
 						<p class="lang-en">María Jesús Eleta Salazar is a retired teacher who dedicates part of her time to literature, specifically to poetry, which she actively shares in numerous cultural acts and events. Her work has been disseminated through three books in which we find poems that allude to her own experiences, her life in the towns where she has lived, including Arévalo.</p>
 						<p class="lang-fr">María Jesús Eleta Salazar est une professeure retraitée qui consacre une partie de son temps à la littérature, en particulier à la poésie, qu'elle partage activement dans de nombreux événements et actes culturels. Son œuvre a été diffusée à travers trois livres dans lesquels on trouve des poèmes qui font allusion à ses propres expériences, sa vie dans les localités où elle a résidé, parmi lesquelles se trouve Arévalo.</p>
-<button class="audio-inline-btn" data-audio="Audio/4aMJesusEleta.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                     <div class="poem">
                         <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
-                        <strong><span class="lang-es-inline">PLAZA DEL ARRABAL</span><span class="lang-en-inline">PLAZA DEL ARRABAL</span><span class="lang-fr-inline">PLACE DU ARRABAL</span></strong><br><br>
+                        <strong><span class="lang-es-inline">PLAZA DEL ARRABAL</span><span class="lang-en-inline">PLAZA DEL ARRABAL</span><span class="lang-fr-inline">PLACE DU ARRABAL</span></strong><br>
+<div class="audio-text-player" data-audio="Audio/4aPoemaPlazaArrabal.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div> 
                         Tiene una rara belleza<br>
                         la Plaza del Arrabal<br>
                         aunque es una carretera<br>
@@ -1515,9 +1566,9 @@ customNumber: "4a",
                         Con sus viejos soportales<br>
                         para poder pasear<br>
                         y sus coquetas terrazas<br>
-                        para sentarse a mirar<br><br>
+                        para sentarse a mirar<br>
                         la gente que va y que viene<br>
-                        a comer y a conversar.<br>
+                        a comer y a conversar.<br><br>
                         Aunque no es, ni mucho menos,<br>
                         el centro de la ciudad,<br>
                         por ella pasa la vida<br>
@@ -1550,9 +1601,6 @@ customNumber: "4a",
                         plaza querida de siempre<br>
                         que tan fuerte me abraza.<br>
                         <div class="author">Mª Jesús Eleta</div>
-<button class="audio-inline-btn" data-audio="Audio/4aPoemaPlazaArrabal.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                     </div>
                 `
             },
@@ -1563,7 +1611,7 @@ customNumber: "4a",
                 subtitle: "SEGUNDO BRAGADO",
                 subtitle_en: "SEGUNDO BRAGADO",
                 subtitle_fr: "SEGUNDO BRAGADO",
- customNumber: "4b",
+				customNumber: "4b",
 				coords: [41.06350901549862, -4.72019287703478],
                 videos: ["4cnv70gKWFs"],
                 music: "Canción del Emperador - Luis de Narváez",
@@ -1598,16 +1646,29 @@ customNumber: "4a",
                      <img src="Imagenes/SantoDomingo2.png" alt="Virgen de las Angustias" class="image-thumbnail" loading="lazy"/>
                    </div>
 						<h3 class="section-title biography">✍️ SEGUNDO BRAGADO</h3>
-						<img src="Imagenes/SegundoBragado.png" alt="Segundo Bragado" class="image-thumbnail" loading="lazy"/>
+ 						<img src="Imagenes/SegundoBragado.png" alt="Segundo Bragado" class="image-thumbnail" loading="lazy"/><br>
+					<button class="audio-inline-btn" data-audio="Audio/4bSegundoBragadoBio.mp3" onclick="playInlineAudio(this)">
+					 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+					</button>						
 						<p class="lang-es">Segundo Bragado Jiménez es un destacado poeta y pintor originario de Arévalo, Ávila, nacido en 1937. Su vida y obra están profundamente arraigadas en la cultura y el paisaje de su tierra natal. Comenzó su formación en las escuelas primarias de Arévalo y, a los 14 años, se inició como pintor industrial, profesión que ejerció hasta su jubilación.</p>
 						<p class="lang-en">Segundo Bragado Jiménez is a distinguished poet and painter from Arévalo, Ávila, born in 1937. His life and work are deeply rooted in the culture and landscape of his homeland. He began his education in the primary schools of Arévalo and, at age 14, started as an industrial painter, a profession he practiced until his retirement.</p>
 						<p class="lang-fr">Segundo Bragado Jiménez est un poète et peintre distingué originaire d'Arévalo, Ávila, né en 1937. Sa vie et son œuvre sont profondément enracinées dans la culture et le paysage de sa terre natale. Il a commencé sa formation dans les écoles primaires d'Arévalo et, à 14 ans, a débuté comme peintre industriel, profession qu'il a exercée jusqu'à sa retraite.</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                     <div class="poem">
                         <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
-                        <strong><span class="lang-es-inline">ARÉVALO</span><span class="lang-en-inline">ARÉVALO</span><span class="lang-fr-inline">ARÉVALO</span></strong><br><br>
+                        <strong><span class="lang-es-inline">ARÉVALO</span><span class="lang-en-inline">ARÉVALO</span><span class="lang-fr-inline">ARÉVALO</span></strong><br>
+<div class="audio-text-player" data-audio="Audio/4bArevaloPoemaSegundo.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div> 
                         Los conozco tanto<br>
                         que podría recorrer<br>
                         como un perro lazarillo..<br><br>
@@ -1646,9 +1707,6 @@ customNumber: "4a",
                         tus plazas,<br>
                         tus ríos....<br>
                          <div class="author">Segundo Bragado</div>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                   </div>
                 `
             },
@@ -1659,8 +1717,8 @@ customNumber: "4a",
                  subtitle: "JOSÉ JIMÉNEZ LOZANO",
                 subtitle_en: "JOSÉ JIMÉNEZ LOZANO",
                 subtitle_fr: "JOSÉ JIMÉNEZ LOZANO",
-customNumber: "5a",
-               coords: [41.06417253901574, -4.718464441019087],
+				customNumber: "5a",
+				coords: [41.06417253901574, -4.718464441019087],
                 videos: ["mJWMtdnH8zY"],
                 music: "Pavana y Villanesca - Diego Pisador",
                 audioUrl: "Musica/PavanayVillanesca.mp3",
@@ -1680,15 +1738,28 @@ customNumber: "5a",
 						<p class="lang-fr">Nous avons accédé à ce belvédère par l'ancienne porte de San José dont il ne reste que la trace au sol avec un pavage différent de celui du reste de la rue. De ce point, on peut également voir la rue Entrecastillos, l'ancien fossé de la muraille du côté sud.</p>
                     </div>
 						<h3 class="section-title biography">✍️ JOSÉ JIMÉNEZ LOZANO</h3>
-						<img src="Imagenes/Lozano.png" alt="José Jiménez Lozano" class="image-thumbnail" loading="lazy"/>
+						<img src="Imagenes/Lozano.png" alt="José Jiménez Lozano" class="image-thumbnail" loading="lazy"/><br>
+					<button class="audio-inline-btn" data-audio="Audio/5aJoseJimeneBio.mp3" onclick="playInlineAudio(this)">
+					 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+					</button><br>                   
 						<p class="lang-es">Nacido en Langa, pequeña población de la comarca de La Moraña, al norte de la provincia de Ávila, donde pasó su infancia hasta que se marchó a estudiar. En su obra se ven reflejados los paisajes de la amplia llanura castellana, con horizontes inmensos que invitan al pensamiento, la reflexión e incluso la mística que inspiró a Juan de la Cruz y Teresa de Ávila; algunos personajes de su recuerdo son usados al modo en que Miguel Delibes utiliza personajes en sus novelas ambientadas en la Castilla rural. Recibió el Premio Cervantes en 2002.</p>
 						<p class="lang-en">Born in Langa, a small town in the La Moraña region, north of the province of Ávila, where he spent his childhood until he left to study. His work reflects the landscapes of the vast Castilian plain, with immense horizons that invite thought, reflection and even the mysticism that inspired John of the Cross and Teresa of Ávila; some characters from his memory are used in the way Miguel Delibes uses characters in his novels set in rural Castile. He received the Cervantes Prize in 2002.</p>
 						<p class="lang-fr">Né à Langa, petite localité de la région de La Moraña, au nord de la province d'Ávila, où il a passé son enfance jusqu'à ce qu'il parte étudier. Dans son œuvre se reflètent les paysages de la vaste plaine castillane, avec des horizons immenses qui invitent à la pensée, la réflexion et même la mystique qui a inspiré Jean de la Croix et Thérèse d'Ávila ; certains personnages de ses souvenirs sont utilisés de la même manière que Miguel Delibes utilise des personnages dans ses romans situés dans la Castille rurale. Il a reçu le Prix Cervantes en 2002.</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                      <div class="quote">
 						<h4 style="color: #667eea; margin-top: 20px; margin-bottom: 10px; font-size: 1.2em;"><span class="lang-es-inline">📖 Capítulo de la cuestión Judía:</span><span class="lang-en-inline">📖 Chapter on the Jewish Question:</span><span class="lang-fr-inline">📖 Chapitre sur la question juive:</span></h4>
+<div class="audio-text-player" data-audio="Audio/5aCuestionJudia.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div> 
                         <p class="lang-es">Señalemos algunas muestras de esa convivencia de las “tres naciones”, las tres castas y las tres religiones y de los hombres y mujeres que las componían. No creo que tenga demasiado interés sorprender dicha convivencia en las instituciones o campos jurídicos porque las unas y los otros pueden contener bellas palabras del “deber ser”, pero que no es. Bajemos más bien a las crónicas y a las otras huellas que nos han quedado de la realidad vivida cada día. Y digamos, por ejemplo, que cuando Alfonso VI vuelve, victorioso en 1139 de su lucha contra los almorávides, los “tres pueblos: cristianos, sarracenos y judíos salieron a su encuentro con laúdes y cítaras, timbales y otros instrumentos musicales entonando loas a Dios y al vencedor, cada uno en su idioma”. Y un espectáculo semejante se ofrece trescientos años después, en 1457, con ocasión de las honras fúnebres en honor del Rey Don Juan II y de los vítores por la llegada al trono de Don Enrique IV, que se celebraron en la iglesia de San Martín de Arévalo el 28 de julio.</p>
 						<p class="lang-en">Let us point out some examples of that coexistence of the “three nations,” the three castes, and the three religions, and of the men and women who made them up. I do not think it is of much interest to seek out that coexistence within institutions or legal spheres, since both may contain fine words about what “ought to be,” but which in fact is not. Let us instead turn to the chronicles and to the other traces that have remained to us of everyday lived reality. And let us say, for example, that when Alfonso VI returned victorious in 1139 from his struggle against the Almoravids, “the three peoples—Christians, Saracens, and Jews—came out to meet him with lutes and zithers, kettledrums and other musical instruments, singing praises to God and to the victor, each in his own language.” And a similar spectacle took place three hundred years later, in 1457, on the occasion of the funeral honors in memory of King Don Juan II and the acclamations welcoming the accession to the throne of Don Enrique IV, which were held in the church of San Martín de Arévalo on July 28.</p>
 						<p class="lang-fr">Signalons quelques témoignages de cette coexistence des « trois nations », des trois castes et des trois religions, ainsi que des hommes et des femmes qui les composaient. Je ne crois pas qu’il soit très intéressant de relever cette coexistence dans les institutions ou dans les domaines juridiques, car les unes comme les autres peuvent contenir de belles paroles sur le « devoir‑être », mais qui ne correspondent pas à la réalité. Descendons plutôt vers les chroniques et les autres traces qui nous sont restées de la réalité vécue au quotidien. Disons, par exemple, que lorsque Alphonse VI revint victorieux en 1139 de sa lutte contre les Almoravides, « les trois peuples — chrétiens, sarrasins et juifs — allèrent à sa rencontre avec des luths et des cithares, des timbales et d’autres instruments de musique, entonnant des louanges à Dieu et au vainqueur, chacun dans sa propre langue ». Et un spectacle semblable se produisit trois cents ans plus tard, en 1457, à l’occasion des honneurs funèbres rendus au roi Don Juan II et des acclamations pour l’arrivée sur le trône de Don Enrique IV, célébrés dans l’église de San Martín de Arévalo le 28 juillet.</p>
@@ -1699,9 +1770,6 @@ customNumber: "5a",
 						 <p>"Sobre judíos, moriscos y conversos"</p>
 						 <p>José Jiménez Lozano</p>
 					</div>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                    </div>
              `
             },
@@ -1709,22 +1777,38 @@ customNumber: "5a",
                 title: "LAS MURALLAS",
                 title_en: "THE WALLS",
                 title_fr: "LES MURAILLES",
-customNumber: "5b",
+                 subtitle: "RICARDO GUERRRA SANCHO",
+                subtitle_en: "RICARDO GUERRRA SANCHO",
+                subtitle_fr: "RICARDO GUERRRA SANCHO",
+				customNumber: "5b",
                 coords: [41.0641129370009, -4.720732459659801],
                 videos: [],
                 music: "Pavana y Villanesca - Diego Pisador",
                 audioUrl: "Musica/PavanayVillanesca.mp3",
                 content: `
                        <h3 class="section-title biography">✍️ RICARDO GUERRA SANCHO</h3>
-                    <img src="Imagenes/RicardoGuerra.png" alt="Ricardo Guerra Sancho" class="image-thumbnail" loading="lazy"/>
+                    <img src="Imagenes/RicardoGuerra.png" alt="Ricardo Guerra Sancho" class="image-thumbnail" loading="lazy"/><br>
+				<button class="audio-inline-btn" data-audio="Audio/5bRicardoGuerraBio.mp3" onclick="playInlineAudio(this)">
+				 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+				</button>                   
                     <p class="lang-es">Nacido en Arévalo (Ávila), España, ha dedicado su vida a estudiar Arévalo, su historia y arte, tradiciones y personajes. Ha publicado varios libros, unos en compañía, y otros en solitario. El Diario de Ávila, con el que colabora, ha publicado más de 300 artículos y una columna semanal con el título genérico de "Desde mi torre Mudéjar". Le nombraron el año 2003 Cronista Oficial de la Ciudad de Arévalo y el año 2007 Miembro Colaborador de la Institución Gran Duque de Alba.</p>
                     <p class="lang-en">Born in Arévalo (Ávila), Spain, he has dedicated his life to studying Arévalo, its history and art, traditions and characters. He has published several books, some in collaboration and others alone. The Diario de Ávila, with which he collaborates, has published more than 300 articles and a weekly column with the generic title "From my Mudéjar Tower." He was appointed Official Chronicler of the City of Arévalo in 2003 and Collaborating Member of the Institution Gran Duque de Alba in 2007.</p>
                     <p class="lang-fr">Né à Arévalo (Ávila), Espagne, il a consacré sa vie à l'étude d'Arévalo, son histoire et son art, ses traditions et ses personnages. Il a publié plusieurs livres, certains en collaboration et d'autres seul. Le Diario de Ávila, avec lequel il collabore, a publié plus de 300 articles et une chronique hebdomadaire sous le titre générique "Depuis ma tour Mudéjar". Il a été nommé Chroniqueur Officiel de la Ville d'Arévalo en 2003 et Membre Collaborateur de l'Institution Gran Duque de Alba en 2007.</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                     <div class="historical-info">
                         <h3 class="section-title history"><span class="lang-es-inline">🏛️ Historia y Patrimonio</span><span class="lang-en-inline">🏛️ History and Heritage</span><span class="lang-fr-inline">🏛️ Histoire et Patrimoine</span></h3>
+<div class="audio-text-player" data-audio="Audio/5bMurallasRicardoGuerra.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div> 
                         <p class="lang-es">Lo que debió de ser el primitivo núcleo de población en torno a la plaza de San Pedro, del que desconocemos casi todo y si tenía algún tipo de defensa, pronto fue rebasado por barrios y arrabales, como hemos visto, espacio urbano que deciden amurallar ante el peligro y la constante amenaza almohade.</p>
                         <p class="lang-en">What must have been the primitive population center around the Plaza de San Pedro, of which we know almost nothing and whether it had any type of defense, was soon surpassed by neighborhoods and suburbs, as we have seen, urban space that they decided to wall in the face of danger and the constant Almohad threat.</p>
 						<p class="lang-fr">Ce qui a dû être le noyau de population primitif autour de la place de San Pedro, dont nous ne connaissons presque rien et s'il avait un type de défense quelconque, a été rapidement dépassé par des quartiers et des faubourgs, comme nous l'avons vu, espace urbain qu'ils ont décidé de fortifier face au danger et à la menace constante almohade.</p>
@@ -1751,9 +1835,6 @@ customNumber: "5b",
 						<p class="lang-es">Hay varias citas antiguas de cronistas que realzan las defensas de la villa -fortaleza aumentadas con la construcción del castillo...</p>
                         <p class="lang-en">There are several ancient quotes from chroniclers that highlight the defenses of the town-fortress increased with the construction of the castle...</p>
 						<p class="lang-fr">Il existe plusieurs citations anciennes de chroniqueurs qui mettent en valeur les défenses de la ville-forteresse augmentées par la construction du château...</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
 					</div>
 			`
             },
@@ -1764,7 +1845,7 @@ customNumber: "5b",
                 subtitle: "ISABEL I DE CASTILLA",
                 subtitle_en: "ISABELLA I OF CASTILE",
                 subtitle_fr: "ISABELLE Ière DE CASTILLE",
-customNumber: "6a",
+				customNumber: "6a",
                 coords: [41.06444799523505, -4.720649447781799],
                 videos: ["0iAziy9jsL4", "teL24nHLLdg"],
                 music: "Ay, qué triste vengo - Juan del Enzina",
@@ -1799,6 +1880,19 @@ customNumber: "6a",
 					</div>
                     <div class="quote">
                         <h3 class="section-title literature"><span class="lang-es-inline">💬 Acerca de la infancia de Isabel la Católica (Diario de Ávila)</span><span class="lang-en-inline">💬 About the childhood of Isabella the Catholic (Diario de Ávila)</span><span class="lang-fr-inline">💬 À propos de l'enfance d'Isabelle la Catholique (Journal d'Ávila)</span></h3>
+<div class="audio-text-player" data-audio="Audio/6aInfanciaIsabel.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div> 
                         <p class="lang-es">Juan II había dejado en señorío a la reina su esposa, para que viviera con el rango de reina viuda y criara a sus hijos Isabel y Alfonso, la ciudad de Soria y las villas de Madrigal y Arévalo. Isabel de Portugal ya había jurado los fueros y privilegios de la villa de Arévalo al tomarla como señorío cuando se casó con el rey. Precisamente en ese acto ya figura la villa como de realengo y con el privilegio de no poder ser enajenada nunca de la corona de Castilla.</p>
                         <p class="lang-en">Juan II had left in lordship to the queen his wife, so that she could live with the rank of dowager queen and raise her children Isabel and Alfonso, the city of Soria and the towns of Madrigal and Arévalo. Isabel of Portugal had already sworn the laws and privileges of the town of Arévalo when she took it as a lordship when she married the king. Precisely in that act the town already appears as royal property with the privilege of never being able to be alienated from the crown of Castile.</p>
 						<p class="lang-fr">Jean II avait laissé en seigneurie à la reine son épouse, pour qu'elle vive avec le rang de reine douairière et élève ses enfants Isabelle et Alphonse, la ville de Soria et les villes de Madrigal et Arévalo. Isabelle du Portugal avait déjà juré les privilèges et franchises de la ville d'Arévalo en la prenant comme seigneurie quand elle a épousé le roi. Précisément dans cet acte, la ville figure déjà comme royale et avec le privilège de ne jamais pouvoir être aliénée de la couronne de Castille.</p>
@@ -1811,9 +1905,6 @@ customNumber: "6a",
 						<p>Diario de Ávila</p>
 						<p>Ricardo Guerra</p>
 						</div>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
 					</div>
                 `
             },
@@ -1824,7 +1915,7 @@ customNumber: "6a",
                 subtitle: "GÓMEZ MANRIQUE",
                 subtitle_en: "GÓMEZ MANRIQUE",
                 subtitle_fr: "GÓMEZ MANRIQUE",
-customNumber: "6b",
+				customNumber: "6b",
                 coords: [41.06444799523505, -4.720649447781799],
                 videos: [],
                 music: "Ay, qué triste vengo - Juan del Enzina",
@@ -1981,7 +2072,7 @@ customNumber: "6b",
                 subtitle: "EULOGIO FLORENTINO SANZ Y EMILIO ROMERO",
                 subtitle_en: "EULOGIO FLORENTINO SANZ AND EMILIO ROMERO",
                 subtitle_fr: "EULOGIO FLORENTINO SANZ ET EMILIO ROMERO",
-customNumber: "7a",
+				customNumber: "7a",
                 coords: [41.06472345343008, -4.720507376291697],
                 videos: ["jWUi_64S-ZY"],
                 music: "Diferencias sobre Guárdame las vacas - Luis de Narváez",
@@ -1998,18 +2089,31 @@ customNumber: "7a",
 						<p class="lang-fr">La Place Royale n'est pas seulement un point d'intérêt historique, mais aussi un espace vivant qui accueille diverses activités culturelles et festives, étant un lieu idéal pour se promener et profiter de l'atmosphère locale.</p>
                     </div>
                     <h3 class="section-title biography">✍️ EULOGIO FLORENTINO SANZ</h3>
-						<img src="Imagenes/Eulogio1.png" alt="Eulogio Florentino Sanz" class="image-thumbnail" loading="lazy"/>
+						<img src="Imagenes/Eulogio1.png" alt="Eulogio Florentino Sanz" class="image-thumbnail" loading="lazy"/><br>
+					<button class="audio-inline-btn" data-audio="Audio/7aEulogioFlorentinoBio.mp3" onclick="playInlineAudio(this)">
+					  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+					</button>
+					<br>                   
 						<p class="lang-es">Eulogio Florentino Sanz (1822–1881) fue un escritor, periodista y dramaturgo vinculado al Romanticismo español. Destacó por su estilo crítico, satírico y comprometido con los ideales liberales. Se trasladó joven a Madrid, donde desarrolló una prolífica carrera como colaborador en prensa y autor teatral. Su obra más conocida es el drama "Don Francisco de Quevedo", (1848), y el poemario satírico "Los pecados capitales".</p>
 						<p class="lang-en">Eulogio Florentino Sanz (1822–1881) was a writer, journalist and playwright linked to Spanish Romanticism. He stood out for his critical, satirical style committed to liberal ideals. He moved to Madrid as a young man, where he developed a prolific career as a press contributor and theatrical author. His best-known work is the drama "Don Francisco de Quevedo" (1848), and the satirical poetry collection "The Capital Sins."</p>
 						<p class="lang-fr">Eulogio Florentino Sanz (1822-1881) était un écrivain, journaliste et dramaturge lié au romantisme espagnol. Il s'est distingué par son style critique, satirique et engagé envers les idéaux libéraux. Il s'est installé jeune à Madrid, où il a développé une carrière prolifique en tant que collaborateur de presse et auteur théâtral. Son œuvre la plus connue est le drame "Don Francisco de Quevedo" (1848), et le recueil satirique "Les péchés capitaux".</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
-  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>
-<br>                   
 						<img src="Imagenes/Eulogio2.png" alt="Eulogio Florentino Sanz" class="image-thumbnail" loading="lazy"/>
                     <div class="poem">
                         <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
-                        <strong><span class="lang-es-inline">GULA</span><span class="lang-en-inline">GLUTTONY</span><span class="lang-fr-inline">GOURMANDISE</span></strong><br><br>
+                        <strong><span class="lang-es-inline">GULA</span><span class="lang-en-inline">GLUTTONY</span><span class="lang-fr-inline">GOURMANDISE</span></strong><br>
+<div class="audio-text-player" data-audio="Audio/7aGulaPoema.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
                         "Con suculentos manjares<br>
                         y espirituosos licores,<br>
                         se adormecen los dolores<br>
@@ -2034,34 +2138,29 @@ customNumber: "7a",
                         dulcemente me reclino….<br>
                         Y a sus pies hombre mezquino<br>
                         tienes abierta la huesa!<br>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                    </div>
                     <h3 class="section-title biography">✍️ EMILIO ROMERO</h3>
-                       <img src="Imagenes/EmilioRomero1.png" alt="Emilio Romero" class="image-thumbnail" loading="lazy"/>
+                       <img src="Imagenes/EmilioRomero1.png" alt="Emilio Romero" class="image-thumbnail" loading="lazy"/><br>
+					<button class="audio-inline-btn" data-audio="Audio/7aEmilioRomeroBio.mp3" onclick="playInlineAudio(this)">
+					 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+					</button><br>                   
 						<p class="lang-es">Emilio Romero Gómez, nacido en Arévalo en 1917, fue un destacado periodista y escritor español, conocido por su papel durante el franquismo y fundador del Diario Pueblo. A lo largo de su carrera, Romero mantuvo un profundo vínculo con su ciudad natal, Arévalo, al que dedicó numerosos escritos y gestos de afecto, el último de ellos la donación de su biblioteca personal a su muerte.</p>
 						<p class="lang-en">Emilio Romero Gómez, born in Arévalo in 1917, was a distinguished Spanish journalist and writer, known for his role during Francoism and founder of Diario Pueblo. Throughout his career, Romero maintained a deep bond with his hometown, Arévalo, to which he dedicated numerous writings and gestures of affection, the last of them being the donation of his personal library upon his death.</p>
 						<p class="lang-fr">Emilio Romero Gómez, né à Arévalo en 1917, était un journaliste et écrivain espagnol distingué, connu pour son rôle pendant le franquisme et fondateur du Diario Pueblo. Tout au long de sa carrière, Romero a maintenu un lien profond avec sa ville natale, Arévalo, à laquelle il a consacré de nombreux écrits et gestes d'affection, le dernier étant le don de sa bibliothèque personnelle à sa mort.</p>
-						
 						<p class="lang-es">Uno de los testimonios más emotivos sobre su relación con Arévalo proviene de Ricardo Guerra Sancho, cronista oficial de la ciudad, quien en su columna "Desde mi torre mudéjar" describe cómo Romero, en sus escritos más íntimos, se despojaba de sus responsabilidades periodísticas y políticas para expresar su amor por su pueblo natal. Estos textos, publicados en programas de ferias y otras obras, retratan con precisión y cercanía la vida de Arévalo, sus gentes y su evolución social. Romero recordaba con cariño su infancia en una sociedad arevalense con un tejido social manufacturero y reivindicativo, y se enorgullecía de sus orígenes en la clase media local, mencionando a su padre, director del telégrafo, y a su abuelo, un ingeniero francés que llegó con la construcción del ferrocarril.</p>
 						<p class="lang-en">One of the most moving testimonies about his relationship with Arévalo comes from Ricardo Guerra Sancho, official chronicler of the city, who in his column "From my Mudéjar tower" describes how Romero, in his most intimate writings, shed his journalistic and political responsibilities to express his love for his hometown. These texts, published in fair programs and other works, portray with precision and closeness the life of Arévalo, its people and its social evolution. Romero fondly remembered his childhood in an Arévalo society with a manufacturing and demanding social fabric, and was proud of his origins in the local middle class, mentioning his father, director of the telegraph, and his grandfather, a French engineer who arrived with the construction of the railway.</p>
 						<p class="lang-fr">L'un des témoignages les plus émouvants sur sa relation avec Arévalo provient de Ricardo Guerra Sancho, chroniqueur officiel de la ville, qui dans sa chronique "Depuis ma tour mudéjar" décrit comment Romero, dans ses écrits les plus intimes, se défaisait de ses responsabilités journalistiques et politiques pour exprimer son amour pour sa ville natale. Ces textes, publiés dans des programmes de foires et autres œuvres, dépeignent avec précision et proximité la vie d'Arévalo, ses habitants et son évolution sociale. Romero se souvenait avec affection de son enfance dans une société d'Arévalo avec un tissu social manufacturier et revendicatif, et était fier de ses origines dans la classe moyenne locale, mentionnant son père, directeur du télégraphe, et son grand-père, un ingénieur français arrivé avec la construction du chemin de fer.</p>
                      <img src="Imagenes/EmilioRomero2.png" alt="Emilio Romero" class="image-thumbnail" loading="lazy"/>
-
 						<p class="lang-es">Además, Romero fue fundador del mensuario "Arévalo", editado por el Hogar de Arévalo en Madrid entre 1952 y 1962. Esta publicación sirvió como un vínculo cultural y social para los arevalenses residentes en la capital, abordando temas históricos, poesía y crónicas sociales. La revista contó con colaboraciones de destacados escritores y se convirtió en una fuente de información sobre el Arévalo de mediados del siglo XX.</p>
                         <p class="lang-en">In addition, Romero was the founder of the monthly magazine "Arévalo", published by the Hogar de Arévalo in Madrid between 1952 and 1962. This publication served as a cultural and social link for Arévalo residents in the capital, addressing historical topics, poetry and social chronicles. The magazine had contributions from prominent writers and became a source of information about mid-20th century Arévalo.</p>
 						<p class="lang-fr">De plus, Romero était le fondateur du mensuel "Arévalo", publié par le Hogar de Arévalo à Madrid entre 1952 et 1962. Cette publication a servi de lien culturel et social pour les habitants d'Arévalo résidant dans la capitale, abordant des thèmes historiques, de la poésie et des chroniques sociales. Le magazine a compté sur les collaborations d'écrivains distingués et est devenu une source d'information sur l'Arévalo du milieu du XXe siècle.</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
 				`
             },
             {
                 title: "PALACIO REAL",
                 title_en: "ROYAL PALACE",
                 title_fr: "PALAIS ROYAL",
-customNumber: "7b",
+				customNumber: "7b",
                 coords: [41.06472345343008, -4.720507376291697],
                 videos: ["lPMgaPLF2aY"],
                 music: "Diferencias sobre Guárdame las vacas - Luis de Narváez",
@@ -2088,7 +2187,7 @@ customNumber: "7b",
                 title: "PLAZA DE LA VILLA",
                 title_en: "VILLA SQUARE",
                 title_fr: "PLACE DE LA VILLE",
- customNumber: "8a",
+				customNumber: "8a",
 				coords: [41.06606697997346, -4.719349441476225],
                 videos: ["F7kpNiBKIj8"],
                 music: "Fantasía X - Alonso Mudarra",
@@ -2179,7 +2278,7 @@ customNumber: "7b",
                 subtitle: "IVÁN ANTONIO ENRÍQUEZ",
                 subtitle_en: "IVÁN ANTONIO ENRÍQUEZ",
                 subtitle_fr: "IVÁN ANTONIO ENRÍQUEZ",
- customNumber: "8b",
+				customNumber: "8b",
 				coords: [41.06568394237418, -4.718978301014322],
                 videos: ["vgfsyZcFKkI"],
                 music: "Fantasía X - Alonso Mudarra",
@@ -2206,18 +2305,31 @@ customNumber: "7b",
                     </div>
 
                     <h3 class="section-title biography">✍️ IVÁN ANTONIO ENRÍQUEZ</h3>
-                        <img src="Imagenes/IvanAntonio.png" alt="Iván Antonio Enríquez" class="image-thumbnail" loading="lazy"/>
+                        <img src="Imagenes/IvanAntonio.png" alt="Iván Antonio Enríquez" class="image-thumbnail" loading="lazy"/><br>
+					<button class="audio-inline-btn" data-audio="Audio/8bIvanAntonioBio.mp3" onclick="playInlineAudio(this)">
+					 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+					</button><br>                   
 						<p class="lang-es">Iván António, nacido en Langa, vive actualmente en Arévalo, es exalumno del IES Adaja y miembro de la asociación cultural La Queda, donde comenzó su andadura como escritor.</p>
 						<p class="lang-en">Iván António, born in Langa, currently lives in Arévalo, is a former student of IES Adaja and member of the cultural association La Queda, where he began his journey as a writer.</p>
 						<p class="lang-fr">Iván António, né à Langa, vit actuellement à Arévalo, est un ancien élève de l'IES Adaja et membre de l'association culturelle La Queda, où il a commencé son parcours en tant qu'écrivain.</p>
 						<p class="lang-es">En el año 2019 publicó Im–Pulso, una dura historia contra el bullying. Un año después publicó El último acorde, la primera parte de una bilogía que culminaría  al año siguiente con Donde Habita el silencio, una historia LGTBIQ+ que lucha contra el odio y por los derechos de todos. También escribe y dirige teatro musical, con más de veinte obras originales, que incluyen fantasía medieval, recreaciones históricas (reales y cómicas) y obras que denuncian injusticias sociales.</p>
                         <p class="lang-en">In 2019 he published Im–Pulso, a harsh story against bullying. A year later he published The Last Chord, the first part of a bilogy that would culminate the following year with Where Silence Dwells, an LGBTIQ+ story that fights against hatred and for the rights of all. He also writes and directs musical theater, with more than twenty original works, which include medieval fantasy, historical recreations (real and comic) and works that denounce social injustices.</p>
 						<p class="lang-fr">En 2019, il a publié Im-Pulso, une histoire dure contre le harcèlement. Un an plus tard, il a publié Le dernier accord, la première partie d'une bilogie qui culminerait l'année suivante avec Où habite le silence, une histoire LGBTIQ+ qui lutte contre la haine et pour les droits de tous. Il écrit et met également en scène du théâtre musical, avec plus de vingt œuvres originales, qui incluent de la fantaisie médiévale, des reconstitutions historiques (réelles et comiques) et des œuvres qui dénoncent les injustices sociales.</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
 					<div class="quote">
                         <h3 class="section-title literature">💬 El último acorde</h3>
+<div class="audio-text-player" data-audio="Audio/8bUltimoAcorde.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
 						<p>...</p>
 						<p>Aún no hemos entrado, pero cruzamos un puente de piedra.</p>
 						 <p>—Puente de Medina, siglo catorce —comenta Zahara mientras lee el cartel que adorna la entrada.</p>
@@ -2229,9 +2341,6 @@ customNumber: "7b",
 					<div class="author">
 						 <p>Iván Antonio Enríquez</p>
 					 </div>
-<button class="audio-inline-btn" data-audio="Audio/8bUltimoAcorde.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
 					</div>
 			`
             },
@@ -2242,7 +2351,7 @@ customNumber: "7b",
                 subtitle: "SAN JUAN DE LA CRUZ",
                 subtitle_en: "SAN JUAN DE LA CRUZ",
                 subtitle_fr: "SAN JUAN DE LA CRUZ",
- customNumber: "8c",
+				customNumber: "8c",
 				coords: [41.06619117029732, -4.719865031286242],
                 videos: ["iFf9BLQgSVk"],
                 music: "Fantasía X - Alonso Mudarra",
@@ -2262,7 +2371,10 @@ customNumber: "7b",
                     </div>
 
                     <h3 class="section-title biography">✍️ SAN JUAN DE LA CRUZ</h3>
-                       <img src="Imagenes/SanJuan.png" alt="San Juan de la Cruz" class="image-thumbnail" loading="lazy"/>
+                       <img src="Imagenes/SanJuan.png" alt="San Juan de la Cruz" class="image-thumbnail" loading="lazy"/><br>
+<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
+  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+</button>                   
 						<p class="lang-es">¿Sabías que San Juan de la Cruz vivió en Arévalo durante parte de su infancia? Aquí pasó algunos de sus primeros años, después de la muerte de su padre, cuando su madre se trasladó con él y sus hermanos en busca de mejores condiciones de vida. Aunque nació en Fontiveros, fue en Arévalo donde se formaron muchas de sus primeras experiencias humanas y espirituales.</p>
 						<p class="lang-en">Did you know that San Juan de la Cruz lived in Arévalo during part of his childhood? Here he spent some of his early years, after his father's death, when his mother moved with him and his siblings in search of better living conditions. Although he was born in Fontiveros, it was in Arévalo where many of his first human and spiritual experiences were formed.</p>
 						<p class="lang-fr">Saviez-vous que Saint Jean de la Croix a vécu à Arévalo pendant une partie de son enfance? Il y a passé quelques-unes de ses premières années, après la mort de son père, lorsque sa mère s'est installée avec lui et ses frères et sœurs à la recherche de meilleures conditions de vie. Bien qu'il soit né à Fontiveros, c'est à Arévalo que se sont formées beaucoup de ses premières expériences humaines et spirituelles.</p>
@@ -2272,12 +2384,22 @@ customNumber: "7b",
 						<p class="lang-es">Así que, mientras disfrutas de esta ciudad llena de encanto, recuerda que estás en un lugar que, de alguna manera, también fue cuna del misticismo español.</p>
 						<p class="lang-en">So, while you enjoy this charming city, remember that you are in a place that, in some way, was also the cradle of Spanish mysticism.</p>
 						<p class="lang-fr">Ainsi, pendant que vous profitez de cette ville pleine de charme, souvenez-vous que vous êtes dans un lieu qui, d'une certaine manière, a également été le berceau du mysticisme espagnol.</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
-  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                     <div class="poem">
                         <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
-                        <strong><span class="lang-es-inline">SAN JUAN DE LA CRUZ EN FONTIVEROS</span><span class="lang-en-inline">SAN JUAND DE LA CRUZ IN FONTIVEROS</span><span class="lang-fr-inline">SAN JUAN DE LA CRUZ À FONTIVEROS</span></strong><br><br>
+                        <strong><span class="lang-es-inline">SAN JUAN DE LA CRUZ EN FONTIVEROS</span><span class="lang-en-inline">SAN JUAND DE LA CRUZ IN FONTIVEROS</span><span class="lang-fr-inline">SAN JUAN DE LA CRUZ À FONTIVEROS</span></strong><br>
+<div class="audio-text-player" data-audio="Audio/8cSanJuanFontiveros.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
                         Tras tu huella yo vengo a este lugar<br>
                         donde la luz primera viste un día<br>
                         y al lado de tu madre te dormías<br>
@@ -2293,9 +2415,6 @@ customNumber: "7b",
                         derramando su gracia en la verdura<br>
                         igual que un pastorcico enamorado.<br>
                         <div class="author">Mª JESÚS ELETA</div>
-<button class="audio-inline-btn" data-audio="Audio/8cSanJuanFontiveros.mp3" onclick="playInlineAudio(this)">
-  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                    </div>
                 `
             },
@@ -2306,7 +2425,7 @@ customNumber: "7b",
                 subtitle: "EL MANCEBO DE ARÉVALO",
                 subtitle_en: "EL MANCEBO DE ARÉVALO",
                 subtitle_fr: "EL MANCEBO DE ARÉVALO",
- customNumber: "8d",
+				customNumber: "8d",
 				coords: [41.06622290974116, -4.719531860730997],
                 videos: ["roeN-dYW6Z8"],
                 music: "Fantasía X - Alonso Mudarra",
@@ -2329,7 +2448,10 @@ customNumber: "7b",
 						<p class="lang-fr">Le centre du Mudéjar est situé dans l'ancienne maison de Nicasio Hernández Luquero, et abrite un centre d'interprétation du Mudéjar, mais aussi de la coexistence des cultures qui s'est produite dans la ville médiévale pendant longtemps. Il dispose d'une exposition de maquettes des tours d'Arévalo et de l'Arévalo médiéval.</p>
                     </div>
                     <h3 class="section-title biography">✍️ EL MANCEBO DE ARÉVALO</h3>
-                       <img src="Imagenes/Mancebo.png" alt="El Mancebo de Arévalo" class="image-thumbnail" loading="lazy"/>
+                       <img src="Imagenes/Mancebo.png" alt="El Mancebo de Arévalo" class="image-thumbnail" loading="lazy"/><br>
+					<button class="audio-inline-btn" data-audio="Audio/8dElMancebodeArevalo.mp3" onclick="playInlineAudio(this)">
+					 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
+					</button>                 
 						<p class="lang-es">El Mancebo de Arévalo fue un autor morisco anónimo del siglo XVI que vivió en Castilla, probablemente en la villa de Arévalo. Es una figura fundamental para entender la cultura morisca tardía en la Península Ibérica, especialmente durante el periodo posterior a la conversión forzada de los musulmanes al cristianismo en 1502 (en Castilla) y 1526 (en Aragón). Aunque su nombre real es desconocido, se le llama "el Mancebo de Arévalo" por la forma en que él mismo se refiere a sí mismo en sus obras.</p>
 						<p class="lang-en">El Mancebo de Arévalo was an anonymous 16th-century Morisco author who lived in Castile, probably in the town of Arévalo. He is a fundamental figure for understanding late Morisco culture in the Iberian Peninsula, especially during the period after the forced conversion of Muslims to Christianity in 1502 (in Castile) and 1526 (in Aragon). Although his real name is unknown, he is called "el Mancebo de Arévalo" because of the way he refers to himself in his works.</p>
 						<p class="lang-fr">Le Jeune d'Arévalo était un auteur morisque anonyme du XVIe siècle qui vivait en Castille, probablement dans la ville d'Arévalo. C'est une figure fondamentale pour comprendre la culture morisque tardive dans la Péninsule Ibérique, en particulier pendant la période qui a suivi la conversion forcée des musulmans au christianisme en 1502 (en Castille) et 1526 (en Aragon). Bien que son vrai nom soit inconnu, on l'appelle "le Jeune d'Arévalo" en raison de la façon dont il se réfère à lui-même dans ses œuvres.</p>
@@ -2343,9 +2465,6 @@ customNumber: "7b",
 						<p class="lang-es">No es bueno para hacer la oración (ṣalāt) ni para vestir ropas [hechas con él], a menos que estén curtidas con agua, fuego, cal, mimosa (acacia), u otros materiales, de modo que pierda su crudeza (o impureza). No debe usarse la lana del carnero no degollado ritualmente (mortezino), sino que toda la masa del pan [sacrificial] ha de ser de lana legítima, limpia.  Porque, según la razón, de cada vellón de lana legítima y limpia se cae cierta cantidad que no es de carnero ritualmente degollado; de modo que para un vellón de lana, se permite el uso de bancos, sustento público, manteca (matəka, tal vez manteca clarificada), aceite y vinagre. Todo ello es ḥalāl (permitido religiosamente), aunque provenga de los infieles, porque es parte del sustento público y general. Por eso lo estableció Mālik (el imán Mālik ibn Anas), basándose en la norma transmitida por el señor del Corán.</p>
 						<p class="lang-en">It is not suitable for performing the prayer (ṣalāt) nor for wearing garments [made from it], unless they have been tanned with water, fire, lime, mimosa (acacia), or other substances, so that they lose their rawness (or impurity). The wool of a ram that has not been ritually slaughtered (mayta, carrion) must not be used; rather, the entire mass of the [sacrificial] wool must be of lawful and clean wool. For, according to reason, from every fleece of lawful and clean wool a certain amount falls away that does not come from a ritually slaughtered ram; thus, for a single fleece of wool, the use of benches, public sustenance, fat (matəka, perhaps clarified butter), oil, and vinegar is permitted. All of this is ḥalāl (religiously permitted), even if it comes from unbelievers, because it forms part of the public and general sustenance. This is why Mālik (the imam Mālik ibn Anas) established it, basing himself on the norm transmitted by the Lord of the Qur’an.</p>
 						<p class="lang-fr">Il ne convient ni pour accomplir la prière (ṣalāt) ni pour confectionner des vêtements [avec cette matière], à moins qu’elle n’ait été tannée à l’eau, au feu, à la chaux, au mimosa (acacia) ou à d’autres substances, de manière à ce qu’elle perde son état brut (ou son impureté). La laine du bélier qui n’a pas été égorgé rituellement (bête morte) ne doit pas être utilisée ; au contraire, toute la masse de la laine [sacrificielle] doit être une laine licite et pure. Car, selon la raison, de chaque toison de laine licite et pure se détache une certaine quantité qui ne provient pas d’un bélier rituellement égorgé ; ainsi, pour une toison de laine, l’usage des bancs, de la subsistance publique, de la graisse (matəka, peut‑être du beurre clarifié), de l’huile et du vinaigre est permis. Tout cela est ḥalāl (religieusement licite), même si cela provient des infidèles, car cela fait partie de la subsistance publique et générale. C’est pourquoi Mālik (l’imam Mālik ibn Anas) l’a établi, en se fondant sur la norme transmise par le Seigneur du Coran.</p>					
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                 
 					</div>
                 `
             },
@@ -2356,7 +2475,7 @@ customNumber: "7b",
                 subtitle: "MAROLO PEROTAS",
                 subtitle_en: "MAROLO PEROTAS",
                 subtitle_fr: "MAROLO PEROTAS",
- customNumber: "9a",
+				customNumber: "9a",
 				coords: [41.06862069015022, -4.721439548087471],
                 videos: ["VnQbkbS8DNw"],
                 music: "Más vale trocar - Juan del Enzina",
@@ -2398,20 +2517,33 @@ customNumber: "7b",
 
                     <div class="poem">
                         <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
-                        <strong><span class="lang-es-inline">Cochinillo de Arévalo</span><span class="lang-en-inline">Roast Suckling Pig of Arévalo</span><span class="lang-fr-inline">Cochon de lait d'Arévalo</span></strong><br><br>
+                        <strong><span class="lang-es-inline">Cochinillo de Arévalo</span><span class="lang-en-inline">Roast Suckling Pig of Arévalo</span><span class="lang-fr-inline">Cochon de lait d'Arévalo</span></strong><br>
+<div class="audio-text-player" data-audio="Audio/9aCochinilloPoema.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
                         Si algún día oyes decir,<br>
                         lector piadoso y amado,<br>
                         que en Arévalo se parten<br>
                         los tostones con un plato,<br>
-                        créelo, porque es VERDAD.<br><br>
+                        créelo, porque es verdad.<br><br>
 						Si tostón no es atrasado,<br>
 						y para que siempre ganes,<br>
 						en caso de aportar algo,<br>
 						escucha lo que me dijo<br>
 						un profesor culinario<br>
 						que se distinguió en mi pueblo<br>
-						en la SALSA y los ASADOS.<br><br>
-                        "Elijes un cochinillo<br>
+						en la salsa y los asados.<br><br>
+                        "Eliges un cochinillo<br>
                         gordo, tierno y sano,<br>
                         de unos veinticinco días<br>
                         y cuatro kilos escasos,<br>
@@ -2439,7 +2571,7 @@ customNumber: "7b",
 						todo él tan churrascado,<br>
 						que parece de cristal,<br>
 						porque así son sus catedráticos<br>
-						en eso de dar el PUNTO<br>
+						en eso de dar el punto<br>
 						a los cerditos asados;<br>
                         y cuando en la mesa veas,<br>
                         el cochinillo afamado,<br>
@@ -2451,9 +2583,6 @@ customNumber: "7b",
                         ni a instrumentos afilados.<br>
                         Basta para triturarle<br>
                         el borde de cualquier plato.<br>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
-  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                    </div>
                 `
             },
@@ -2464,7 +2593,7 @@ customNumber: "7b",
                 subtitle: "NICASIO HERNÁNDEZ LUQUERO",
                 subtitle_en: "NICASIO HERNÁNDEZ LUQUERO",
                 subtitle_fr: "NICASIO HERNÁNDEZ LUQUERO",
- customNumber: "9b",
+				customNumber: "9b",
 				coords: [41.06862069015022, -4.721439548087471],
                 videos: ["7kId1mB9JQQ"],
                 music: "Más vale trocar - Juan del Enzina",
@@ -2488,6 +2617,19 @@ customNumber: "7b",
                     </div>
 					<div class="quote">
                         <h3 class="section-title literature">💬 Sin ofender, ¿eh?</h3>
+<div class="audio-text-player" data-audio="Audio/9bSinOfender.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
 						<p>Sonrío para hacerle entender que yo no me doy por aludido ante sus palabras.</p>
 						<p>—Solo vengo a filmar —justifico.</p>
 						<p>—Mientras no se tercie otra cosa… claro —finaliza Gio.</p>
@@ -2501,13 +2643,23 @@ customNumber: "7b",
 						<p>El último acorde</p>
 					<p>Iván Antonio Enríquez</p>
 						 </div>
-<button class="audio-inline-btn" data-audio="Audio/9bSinOfender.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
 					</div>
 					<div class="poem">
                         <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
 						<h3 class="section-title biography">✍️ NICASIO HERNÁNDEZ LUQUERO</h3>
+<div class="audio-text-player" data-audio="Audio/9bNicasoPoema.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
                         ¡Ay del dolor de no arder en la llama<br>
                         de una fe que segara los sentidos<br>
                         y llevase a su ritmo los latidos<br>
@@ -2539,9 +2691,6 @@ customNumber: "7b",
                         sed de anhelos sin nombre y la secreta<br>
                         comezón de la voz que aún no fue escrita.<br>
                         <div class="author">Nicasio Hernández Luquero</div>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
-  🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                     </div>
                 `
             },
@@ -2552,7 +2701,7 @@ customNumber: "7b",
                 subtitle: "SANTA TERESA Y LOS PECES INCORRUPTIBLES",
                 subtitle_en: "SAINT TERESA AND THE INCORRUPTIBLE FISH",
                 subtitle_fr: "SAINTE THÉRÈSE ET LES POISSONS INCORRUPTIBLES",
-customNumber: "10a",
+				customNumber: "10a",
                 coords: [41.06941588265182, -4.720685610372511],
                 videos: ["AEaQvoTbRMY"],
                 music: "Nada te turbe - Jacques Berthier",
@@ -2583,6 +2732,19 @@ customNumber: "10a",
 
                     <div class="quote">
                         <h3 class="section-title literature"><span class="lang-es-inline">💬 Testimonios Literarios</span><span class="lang-en-inline">💬 Literary Testimonies</span><span class="lang-fr-inline">💬 Témoignages Littéraires</span></h3>
+<div class="audio-text-player" data-audio="Audio/10aSantaTeresay Peces.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
 						<p class="lang-es">Según nos dijeron, desde principios del siglo pasado o quizás desde antes, se recuerdan peces incorruptos. Nosotros no conseguimos encontrar ninguno con más de diez años y es que –nos apuntó un vecino-: «No podemos tenerlos más antiguos porque siempre se han regalado a todo el mundo que venga y los pida, para que se convenzan de la incorruptibilidad del bicho… y si usted apuesta en contra, seguro que pierde».</p>
                         <p class="lang-en">According to what we were told, since the beginning of the last century or perhaps earlier, incorruptible fish are remembered. We couldn't find any more than ten years old and that's because –a neighbor pointed out to us-: "We can't have older ones because they have always been given away to everyone who comes and asks for them, so they can be convinced of the incorruptibility of the creature… and if you bet against it, you'll surely lose."</p>
 						<p class="lang-fr">Selon ce qu'on nous a dit, depuis le début du siècle dernier ou peut-être avant, on se souvient de poissons incorruptibles. Nous n'avons pas réussi à en trouver de plus de dix ans et c'est que --un voisin nous a fait remarquer-: «Nous ne pouvons pas en avoir de plus anciens parce qu'ils ont toujours été offerts à tous ceux qui viennent et les demandent, pour qu'ils soient convaincus de l'incorruptibilité de la bête... et si vous pariez contre, vous perdrez sûrement».</p>
@@ -2608,9 +2770,6 @@ customNumber: "10a",
 						<p class="lang-fr">«La conservation de nos poissons doit être tentée au printemps, car en été, avec les températures, cela devient plus difficile. Ici, nous attrapons le chevesne, le barbeau, la brème et d'autres plus petits; aussi quelques carpes qui viennent du Douro, en amont, qui pèsent trois kilos. Ceux-ci, les grands, sont plus difficiles à conserver, car ils ont plus d'entrailles. C'est pourquoi, dès qu'ils sont sortis, ils doivent être suspendus dans des endroits très frais et où il n'y a pas de mouches. Une fois secs, ils n'ont besoin d'aucun soin... On dit que c'est le sable, on dit que c'est l'eau qui vient de la montagne; enfin, on dit beaucoup de choses, mais la cause... Je prends les poissons, je les accroche sans plus, et ils se conservent».</p>
                         <img src="Imagenes/PecesAdaja.png" alt="Peces Adaja" class="image-thumbnail" loading="lazy"/>
                         <p style="text-align: right; font-style: italic;">La Voz de Ávila, 22 de enero de 2017</p>
-<button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
- 🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-</button>                   
                    </div>
                 `
             },
@@ -2618,7 +2777,7 @@ customNumber: "10a",
                 title: "CASTILLO DE ARÉVALO",
                 title_en: "ARÉVALO CASTLE",
                 title_fr: "CHÂTEAU D'ARÉVALO",
- customNumber: "10b",
+				customNumber: "10b",
 				coords: [41.06977438477988, -4.720716287459782],
                 videos: ["-KbG6fPUXxg"],
                 music: "Nada te turbe - Jacques Berthier",
@@ -2654,7 +2813,20 @@ customNumber: "10a",
 
                     <div class="poem">
                         <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
-                        <strong><span class="lang-es-inline">AL CASTILLO DE MI PUEBLO</span><span class="lang-en-inline">TO THE CASTLE OF MY TOWN</span><span class="lang-fr-inline">AU CHÂTEAU DE MON VILLAGE</span></strong><br><br>
+                        <strong><span class="lang-es-inline">AL CASTILLO DE MI PUEBLO</span><span class="lang-en-inline">TO THE CASTLE OF MY TOWN</span><span class="lang-fr-inline">AU CHÂTEAU DE MON VILLAGE</span></strong><br>
+<div class="audio-text-player" data-audio="Audio/10bAlCastilloSegundoPoema.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
                         ¡Qué fuerza evocadora!<br>
                         La que aún hoy despiertan<br>
                         los viejos muñones de tus muros...<br>
@@ -2671,15 +2843,25 @@ customNumber: "10a",
                         mara que un marino de Colón<br>
                         gritara...¡Tierra!<br>
                         <div class="author">Segundo Bragado</div>
-      <button class="audio-inline-btn" data-audio="Audio/Biopablo.mp3" onclick="playInlineAudio(this)">
-        🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-    </button>                   
                    </div>
                        <img src="Imagenes/Castillo2.png" alt="Castillo" class="image-thumbnail" loading="lazy"/>
 
                     <div class="poem">
                         <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
-                        <strong><span class="lang-es-inline">JUNTO AL ADAJA</span><span class="lang-en-inline">BESIDE THE ADAJA</span><span class="lang-fr-inline">PRÈS DE L'ADAJA</span></strong><br><br>
+                        <strong><span class="lang-es-inline">JUNTO AL ADAJA</span><span class="lang-en-inline">BESIDE THE ADAJA</span><span class="lang-fr-inline">PRÈS DE L'ADAJA</span></strong><br>
+<div class="audio-text-player" data-audio="Audio/10bJuntoAdaja.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
                         Desde mi ventana veo<br>
                         los árboles de tu orilla<br>
                         la primavera los viste<br>
@@ -2715,9 +2897,6 @@ customNumber: "10a",
                         para la vida de Arévalo<br>
                         que en sus espejos se mira.<br>
                         <div class="author">Mª Jesús Eleta</div>
-      <button class="audio-inline-btn" data-audio="Audio/10bJuntoAdaja.mp3" onclick="playInlineAudio(this)">
-        🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-    </button>                   
                    </div>
                 `
             },
@@ -2737,7 +2916,20 @@ customNumber: "10a",
                            <img src="Imagenes/Siempre.png" alt="Arévalo Siempre" class="location-image" loading="lazy"/>
                  <div class="poem">
                         <h3 class="section-title poetry"><span class="lang-es-inline">📜 Poesía</span><span class="lang-en-inline">📜 Poetry</span><span class="lang-fr-inline">📜 Poésie</span></h3>
-                        <strong><span class="lang-es-inline">Arévalo siempre</span><span class="lang-en-inline">Arévalo always</span><span class="lang-fr-inline">Arévalo toujours</span></strong><br><br>
+                        <strong><span class="lang-es-inline">Arévalo siempre</span><span class="lang-en-inline">Arévalo always</span><span class="lang-fr-inline">Arévalo toujours</span></strong><br>
+<div class="audio-text-player" data-audio="Audio/10cArevaloSiempre.mp3">
+    <div class="audio-text-header">
+        <button class="audio-text-btn" onclick="toggleTextAudio(this)">
+            🔊 <span class="lang-es-inline">Escuchar</span>
+               <span class="lang-en-inline">Listen</span>
+               <span class="lang-fr-inline">Écouter</span>
+        </button>
+        <div class="audio-text-progress" onclick="seekTextAudio(event, this)">
+            <div class="audio-text-progress-fill"></div>
+        </div>
+        <span class="audio-text-time">0:00 / 0:00</span>
+    </div>
+</div>
                         Dormida en el abrazo de tus ríos<br>
                         fuiste corte, prisión, templo, mercado<br>
                         y con trabajo sueñas tu pasado,<br>
@@ -2753,9 +2945,6 @@ customNumber: "10a",
                         y escribe más allá de tus despojos<br>
                         una página nueva de tu historia.<br>
                         <div class="author">Mª Jesús Eleta</div>
-      <button class="audio-inline-btn" data-audio="Audio/10cArevaloSiempre.mp3" onclick="playInlineAudio(this)">
-        🎧 <span class="lang-es-inline">Escuchar</span><span class="lang-en-inline">Listen</span><span class="lang-fr-inline">Ecouter</span>
-    </button>                   
                    </div>
 
                     <div class="farewell-section">
@@ -3607,7 +3796,7 @@ window.toggleTextAudio = function(button) {
             // Pausar reproducción
             currentTextAudio.audio.pause();
             button.classList.remove('playing');
-            updateButtonText(button, 'Escuchar biografía', 'Listen to biography', 'Écouter la biographie');
+            updateButtonText(button, 'Escuchar', 'Listen', 'Écouter');
         }
     } else {
         // Detener audio anterior
@@ -3636,7 +3825,7 @@ window.toggleTextAudio = function(button) {
         
         audio.addEventListener('ended', () => {
             button.classList.remove('playing');
-            updateButtonText(button, 'Escuchar biografía', 'Listen to biography', 'Écouter la biographie');
+            updateButtonText(button, 'Escuchar', 'Listen', 'Écouter');
             progressFill.style.width = '0%';
         });
         
@@ -3728,9 +3917,9 @@ function stopAllTextAudio() {
             if (currentTextAudio.button.classList.contains('audio-text-btn')) {
                 updateButtonText(
                     currentTextAudio.button, 
-                    'Escuchar biografía', 
-                    'Listen to biography', 
-                    'Écouter la biographie'
+                    'Escuchar', 
+                    'Listen', 
+                    'Écouter'
                 );
             } else if (currentTextAudio.button.classList.contains('audio-inline-btn')) {
                 updateInlineButtonText(
