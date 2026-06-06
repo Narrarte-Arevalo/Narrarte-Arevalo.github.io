@@ -1077,7 +1077,8 @@
     <div class="container">
         <main id="main-content">
             <section id="welcome" class="welcome-screen" aria-labelledby="main-title">
-                <h1 id="main-title">NarrArte ARÉVALO</h1>
+                                       
+<h1 id="main-title"><img src="Imagenes/LogoAdaja.png" alt="IES Adaja" width="100" height="100" loading="lazy"/>NarrArte ARÉVALO<img src="Imagenes/AyuntArevalo.png" alt="Ayuntamiento Arévalo" width="100" height="100" loading="lazy"/></h1>
                                 <p class="subtitle lang-es">Ruta Artístico-Literaria</p>
 								<p class="subtitle lang-en">Artistic‑Literary Trail</p>
 								<p class="subtitle lang-fr">Itinéraire artistico‑littéraire</p>
@@ -1101,8 +1102,10 @@
 </div>
 
                 </article>
+                       <img src="Imagenes/LogoAdaja.png" alt="IES Adaja" class="image-thumbnail" loading="lazy"/>
                        <img src="Imagenes/Despedida.png" alt="Narrarte" class="image-thumbnail" loading="lazy"/>
-                       <img src="Imagenes/LeoCrezco.png" alt="Leo, Crezco y me cultivo" class="image-thumbnail" loading="lazy"/>
+                       <img src="Imagenes/LogoBiblio.png" alt="Leo, Crezco y me cultivo" class="image-thumbnail" loading="lazy"/>
+                       <img src="Imagenes/AyuntArevalo.png" alt="Ayuntamiento Arévalo" class="image-thumbnail" loading="lazy"/>
 
                 <div id="main-map" class="map-container" role="region" aria-label="Mapa general de la ruta"></div>
 
@@ -2982,10 +2985,20 @@
                         <p class="lang-es">Esta ruta ha sido diseñada por un equipo de profesores y alumnos del IES Adaja de Arévalo dentro del marco del Proyecto de Innovación Educativa PIE Rutas Históricas, Artísticas y Literarias. Es un proyecto vivo, que pretende acercar Arévalo desde otro punto de vista a sus visitantes.</p>
 						<p class="lang-en">This route has been designed by a team of teachers and students from IES Adaja in Arévalo within the framework of the Educational Innovation Project PIE Historical, Artistic and Literary Routes. It is a living project, which aims to bring Arévalo closer to its visitors from another point of view.</p>
 						<p class="lang-fr">Cet itinéraire a été conçu par une équipe de professeurs et d'élèves de l'IES Adaja d'Arévalo dans le cadre du Projet d'Innovation Éducative PIE Itinéraires Historiques, Artistiques et Littéraires. C'est un projet vivant, qui vise à rapprocher Arévalo de ses visiteurs d'un autre point de vue.</p>
-                       <img src="Imagenes/LeoCrezco.png" alt="Leo, Crezco y me cultivo" class="image-thumbnail" loading="lazy"/>
+                       <img src="Imagenes/LogoBiblio.png" alt="Leo, Crezco y me cultivo" class="image-thumbnail" loading="lazy"/>
 
                         <div class="farewell-box">
-                            <h4 style="color: #764ba2; margin-top: 20px; margin-bottom: 10px; font-size: 1.2em;"><span class="lang-es-inline">🎭 NarrArte Arévalo 🎭</span><span class="lang-en-inline">🎭 NarrArte Arévalo 🎭</span><span class="lang-fr-inline">🎭 NarrArte Arévalo 🎭</span></h4>
+                            <h4 style="color: #764ba2; margin-top: 20px; margin-bottom: 10px; font-size: 1.2em;"><span class="lang-es-inline">
+							
+                       <img src="Imagenes/LogoAdaja.png" alt="IES Adaja" width="50" height="50" loading="lazy"/>
+                       <img src="Imagenes/Despedida.png" alt="Narrarte" width="50" height="50" loading="lazy"/>
+							
+							🎭 NarrArte Arévalo 🎭
+							
+                       <img src="Imagenes/LogoBiblio.png" alt="Leo, Crezco y me cultivo" width="50" height="50" loading="lazy"/>
+                       <img src="Imagenes/AyuntArevalo.png" alt="Ayuntamiento Arévalo" width="50" height="50" loading="lazy"/>
+							
+							</span><span class="lang-en-inline">🎭 NarrArte Arévalo 🎭</span><span class="lang-fr-inline">🎭 NarrArte Arévalo 🎭</span></h4>
                             <p class="lang-es">Ruta Artístico-Literaria</p>
                             <p class="lang-en">Artistic‑Literary Trail</p>
                             <p class="lang-fr">Itinéraire artistico‑littéraire</p>
@@ -3334,9 +3347,14 @@
             container.innerHTML = `
                 <article class="location-card">
                     <header class="location-header">
-                        <h2 class="location-title">${escapeHtml(title)}</h2>
+                        <h2 class="location-title">${escapeHtml(title)}
+                       <img src="Imagenes/LogoAdaja.png" alt="IES Adaja" width="75" height="75" style="float: right;" loading="lazy"/>
+                       <img src="Imagenes/AyuntArevalo.png" alt="Ayuntamiento Arévalo" width="75" height="75" style="float: right;" loading="lazy"/>
+</h2>
                         ${subtitle ? `<p class="location-subtitle">${escapeHtml(subtitle)}</p>` : ''}
-                    </header>
+
+
+                   </header>
 
                     ${loc.music ? `
                         <div class="music-note" role="note">
