@@ -14,6 +14,7 @@ const NOTICIAS = [
     { medio: 'Tribuna de Ávila', fecha: '2026-10-21', titulo: 'El IES Adaja crea una ruta para descubrir el patrimonio de Arévalo', url: 'https://www.tribunaavila.com/noticias/463447/el-ies-adaja-crea-una-ruta-para-descubrir-el-patrimonio-de-arevalo' },
     { medio: 'Diario de Ávila', fecha: '2026-10-21', titulo: 'Alumnos del IES Adaja promocionan en Arévalo el turismo local', url: 'https://www.diariodeavila.es/noticia/z8a05f2e8-f043-495a-aeebf43d3f7371f6/202610/alumnos-del-ies-adaja-promocionan-en-arevalo-el-turismo-local' },
     { medio: 'Onda Cero Ávila', fecha: '2026-11-11', titulo: 'Presentamos una nueva ruta artístico- literaria por #Arévalo con @IESADAJA', url: 'https://www.ondaceroavila.es/PodcastAvila?c=xbvqzqe&p=avilaonda' },
+    { medio: 'CyLTV', fecha: '2026-11-13', titulo: 'Ávila en INTUR', url: 'https://www.cyltv.es/videoSH/2587de0a-1d7e-4064-807e-1a6e78e94667/Avila-en-INTUR' },
 ];
 
 (function () {
