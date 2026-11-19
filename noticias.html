@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+    NarrArte ARÉVALO - Página de noticias (la ruta en los medios)
+    Para añadir una noticia, edita la lista NOTICIAS del archivo noticias.js
+-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#124A7E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23124A7E'/%3E%3Ccircle cx='32' cy='25' r='14' fill='%237AC142'/%3E%3Cpath d='M8 50q24-14 48 0' stroke='%23fff' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+    <meta name="description" content="Noticias publicadas en los medios de comunicación sobre la ruta artístico-literaria NarrArte Arévalo.">
+    <title>Noticias - NarrArte Arévalo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="es">
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Selector de idioma -->
+    <div class="language-selector">
+        <button id="lang-es" class="active" aria-label="Cambiar a español">
+            🇪🇸 ES
+        </button>
+        <button id="lang-en" aria-label="Change to English">
+            🇬🇧 EN
+        </button>
+        <button id="lang-fr" aria-label="Changer en français">
+            🇫🇷 FR
+        </button>
+    </div>
+
+    <div class="container">
+        <main id="main-content">
+            <section class="welcome-screen" aria-labelledby="news-title">
+                <div class="logo-row logo-row--25-50-25">
+                    <div><img src="Imagenes/LogoAdaja.png" alt="IES Adaja" loading="lazy" /></div>
+                    <div>
+                        <h1 id="news-title">
+                            <span class="lang-es-inline">Noticias</span>
+                            <span class="lang-en-inline">News</span>
+                            <span class="lang-fr-inline">Actualités</span>
+                        </h1>
+                    </div>
+                    <div><img src="Imagenes/AyuntArevalo.png" alt="Ayuntamiento Arévalo" loading="lazy" /></div>
+                </div>
+
+                <p class="subtitle lang-es">La ruta NarrArte Arévalo en los medios de comunicación</p>
+                <p class="subtitle lang-en">The NarrArte Arévalo trail in the media</p>
+                <p class="subtitle lang-fr">L'itinéraire NarrArte Arévalo dans les médias</p>
+
+                <ol id="news-list" class="news-list"></ol>
+
+                <div id="news-empty" class="intro-text hidden">
+                    <p class="lang-es">Próximamente publicaremos aquí los enlaces a las noticias sobre la ruta.</p>
+                    <p class="lang-en">Links to news stories about the trail will be published here soon.</p>
+                    <p class="lang-fr">Les liens vers les articles sur l'itinéraire seront bientôt publiés ici.</p>
+                </div>
+
+                <a class="btn btn-secondary link-btn my-30" href="index.html">
+                    <span class="lang-es-inline">← Volver a la ruta</span>
+                    <span class="lang-en-inline">← Back to the trail</span>
+                    <span class="lang-fr-inline">← Retour à l'itinéraire</span>
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <script src="noticias.js"></script>
+</body>
+</html>

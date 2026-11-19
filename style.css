@@ -1067,6 +1067,18 @@
         }
         .intro-text h2, .intro-text strong { color: var(--brand-green); }
 
+
+        /* ====== Página de noticias ====== */
+        .news-list { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 14px; text-align: left; }
+        .news-item {
+            background: #fff; border: 1px solid #dde3ea; border-left: 6px solid var(--brand-green);
+            border-radius: 12px; padding: 14px 18px; box-shadow: var(--shadow-md);
+        }
+        .news-item a { color: var(--primary-color); font-weight: bold; font-size: 1.1em; }
+        .news-meta { display: block; margin-top: 4px; color: #555; font-size: 0.9em; }
+        .news-link-panel { text-align: center; }
+        .news-link-panel p { margin: 10px 0 16px; }
+
         /* Foco visible para teclado */
         a:focus-visible, button:focus-visible, [data-click]:focus-visible {
             outline: 3px solid #000;
